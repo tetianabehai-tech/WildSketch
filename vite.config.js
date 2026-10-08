@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/project-wild-sketch-01/',
+  base: './',
   server: {
     host: '0.0.0.0',
     port: 5173,

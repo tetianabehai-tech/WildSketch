@@ -16,80 +16,339 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
-    <script type="module" crossorigin src="./assets/index-_65FujhD.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-cboDr0VO.css">
+    <script type="module" crossorigin src="./assets/index-Cg0XiZ6z.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BUZwF-W4.css">
   </head>
   <body>
-    <div class="figma-scene">
-      <div class="reference-canvas">
-        <div class="mock-frame left-frame">
-          <div class="mock-header">Home</div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="WildSketch home">
+          <span class="brand-mark">W</span>
+          <span>WildSketch</span>
+        </a>
 
-          <div class="mock-card hero-card">
-            <div class="mock-art mock-scene-one"></div>
-            <div class="mock-copy">
-              <div class="mini-logo">WildSketch</div>
-              <h1>Maybe a home for creative rituals</h1>
-              <p>Learn, paint, and reconnect with yourself in a warm and welcoming creative community.</p>
-              <div class="mock-button-row">
-                <span class="tag">Creative</span>
-                <span class="tag muted">Outdoor</span>
-              </div>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#classes">Classes</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#register">Register</a>
+        </nav>
+
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="#register" class="button header-button">Book a spot</a>
+      </div>
+
+      <div class="mobile-menu" aria-label="Mobile menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#classes">Classes</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#register">Register</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Creative community</p>
+            <h1>Sketch the world in a slower, brighter way.</h1>
+            <p class="hero-text">
+              WildSketch brings together mindful art sessions, weekend workshops, and outdoor drawing
+              experiences designed to help you reconnect, create, and feel inspired.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#register" class="button primary">Join a workshop</a>
+              <a href="#classes" class="button secondary">Explore classes</a>
             </div>
+
+            <ul class="hero-stats" aria-label="Community stats">
+              <li><strong>2.4k+</strong><span>members</span></li>
+              <li><strong>46</strong><span>weekly sessions</span></li>
+              <li><strong>96%</strong><span>repeat guests</span></li>
+            </ul>
           </div>
 
-          <div class="mock-separator"></div>
+          <div class="hero-visual" aria-label="WildSketch workshop illustration">
+            <div class="hero-photo hero-photo-large"></div>
+            <div class="floating-card card-top">
+              <span class="card-label">Next session</span>
+              <strong>Forest sketch walk</strong>
+              <em>Sun, 10:30 AM</em>
+            </div>
 
-          <div class="mock-grid">
-            <div class="mock-tile tall"><div class="mini-photo photo-one"></div></div>
-            <div class="mock-tile"><div class="mini-photo photo-two"></div></div>
-            <div class="mock-tile"><div class="mini-photo photo-three"></div></div>
-            <div class="mock-tile square"><div class="mini-photo photo-four"></div></div>
-            <div class="mock-tile square"><div class="mini-photo photo-five"></div></div>
-            <div class="mock-tile wide"><div class="mini-photo photo-six"></div></div>
-          </div>
-
-          <div class="mock-banner">
-            <div class="banner-badge">Sketch</div>
-            <div class="banner-text">
-              <strong>Art in motion</strong>
-              <span>Join our next creative walk.</span>
+            <div class="floating-card card-bottom">
+              <span class="card-label">This month</span>
+              <strong>12 workshops</strong>
+              <em>New themes every week</em>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="mock-frame right-frame">
-          <div class="mock-header">Home</div>
-
-          <div class="mock-column-card">
-            <div class="mock-slab">
-              <div class="mini-logo">WildSketch</div>
-              <div class="mock-mini-grid">
-                <div class="mini-tile tiny-img one"></div>
-                <div class="mini-tile tiny-img two"></div>
-                <div class="mini-tile tiny-img three"></div>
-              </div>
-            </div>
-
-            <div class="mock-article">
-              <div class="article-image photo-seven"></div>
-              <div class="article-text">
-                <h2>Creative rituals</h2>
-                <p>Design sessions for artists, thinkers, and curious people.</p>
-              </div>
-            </div>
-
-            <div class="mock-article alt">
-              <div class="article-image photo-eight"></div>
-              <div class="article-text">
-                <h2>Nature-led practice</h2>
-                <p>Explore color, texture, and calm in inspiring outdoor spaces.</p>
-              </div>
-            </div>
+      <section id="about" class="section about">
+        <div class="container two-column">
+          <div class="section-heading compact">
+            <p class="eyebrow">Why people join</p>
+            <h2>Art that feels deeply personal.</h2>
           </div>
 
-          <div class="mock-measure">768 × 5365 Hug</div>
+          <div class="about-copy">
+            <p>
+              We design relaxed, welcoming sessions that blend technique, creativity, and the healing
+              rhythm of time outside. Every workshop is created to help you slow down, notice details,
+              and leave with something meaningful.
+            </p>
+          </div>
         </div>
+
+        <div class="container benefits-grid">
+          <article class="benefit-card">
+            <div class="icon-wrap">✦</div>
+            <h3>Creative rhythm</h3>
+            <p>Build a steady art practice with supportive prompts and encouraging guidance.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="icon-wrap">☼</div>
+            <h3>Outdoor inspiration</h3>
+            <p>Draw from riverside paths, city parks, and natural textures that spark fresh ideas.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="icon-wrap">✎</div>
+            <h3>Beginner-friendly</h3>
+            <p>No pressure, no perfection. Just tools, guidance, and a space to make marks.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="icon-wrap">♡</div>
+            <h3>Community energy</h3>
+            <p>Meet warm, curious people who value slow living, creativity, and shared rituals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="classes" class="section classes">
+        <div class="container section-header">
+          <div>
+            <p class="eyebrow">Upcoming experiences</p>
+            <h2>Choose your next creative ritual.</h2>
+          </div>
+          <a href="#register" class="text-link">Book your place</a>
+        </div>
+
+        <div class="container classes-grid">
+          <article class="class-card">
+            <div class="class-image image-one"></div>
+            <div class="class-content">
+              <span class="chip">Urban sketching</span>
+              <h3>City Colors</h3>
+              <p>Explore shade, shape, and movement while sketching the rhythm of everyday streets.</p>
+              <div class="class-meta">
+                <span>June 12</span>
+                <span>2 hrs</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="class-card accent-card">
+            <div class="class-image image-two"></div>
+            <div class="class-content">
+              <span class="chip">Nature journaling</span>
+              <h3>Forest Notes</h3>
+              <p>Use color, texture, and quick observation to capture the atmosphere of the outdoors.</p>
+              <div class="class-meta">
+                <span>June 20</span>
+                <span>3 hrs</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="class-card">
+            <div class="class-image image-three"></div>
+            <div class="class-content">
+              <span class="chip">Creative flow</span>
+              <h3>Watercolor Morning</h3>
+              <p>Practice gentle layering and expressive color mixing with a welcoming, beginner-safe pace.</p>
+              <div class="class-meta">
+                <span>June 28</span>
+                <span>2.5 hrs</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section gallery">
+        <div class="container section-header">
+          <div>
+            <p class="eyebrow">Recent moments</p>
+            <h2>Scenes from our studio and the outdoors.</h2>
+          </div>
+        </div>
+
+        <div class="container gallery-grid">
+          <div class="gallery-item tall image-four"></div>
+          <div class="gallery-item image-five"></div>
+          <div class="gallery-item image-six"></div>
+          <div class="gallery-item image-seven"></div>
+          <div class="gallery-item wide image-eight"></div>
+        </div>
+      </section>
+
+      <section class="section team">
+        <div class="container section-header">
+          <div>
+            <p class="eyebrow">Meet the team</p>
+            <h2>Guides who make every session feel easy and inspiring.</h2>
+          </div>
+        </div>
+
+        <div class="container team-grid">
+          <article class="team-card">
+            <div class="avatar avatar-one"></div>
+            <h3>Lina Hart</h3>
+            <p>Lead artist</p>
+          </article>
+
+          <article class="team-card">
+            <div class="avatar avatar-two"></div>
+            <h3>Mateo Gray</h3>
+            <p>Workshop mentor</p>
+          </article>
+
+          <article class="team-card">
+            <div class="avatar avatar-three"></div>
+            <h3>Aria Bloom</h3>
+            <p>Community host</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="reviews" class="section reviews">
+        <div class="container section-header">
+          <div>
+            <p class="eyebrow">Reviews</p>
+            <h2>People keep coming back for the calm, creativity, and connection.</h2>
+          </div>
+        </div>
+
+        <div class="container reviews-grid">
+          <article class="review-card">
+            <p>
+              “The sessions feel like a little reset for my week. I leave feeling calmer and more
+              creative than when I arrived.”
+            </p>
+            <div class="review-author">
+              <strong>Nadia K.</strong>
+              <span>Beginner artist</span>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <p>
+              “The instructors are encouraging, the atmosphere is warm, and the outdoor setting makes
+              every exercise feel alive.”
+            </p>
+            <div class="review-author">
+              <strong>Omar T.</strong>
+              <span>Weekend learner</span>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <p>
+              “I came for the drawing and stayed for the community. It is one of the few places where
+              I feel genuinely inspired.”
+            </p>
+            <div class="review-author">
+              <strong>Eva S.</strong>
+              <span>Creative volunteer</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="register" class="section register">
+        <div class="container register-shell">
+          <div class="register-copy">
+            <p class="eyebrow">Reserve your place</p>
+            <h2>Join the next WildSketch session.</h2>
+            <p>
+              Choose a workshop, share a little about yourself, and we will send the details along with
+              a welcome guide.
+            </p>
+          </div>
+
+          <form id="register-form" class="register-form" novalidate>
+            <label>
+              <span>Full name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="your@email.com" required />
+            </label>
+
+            <label>
+              <span>Workshop</span>
+              <select name="workshop" required>
+                <option value="">Select a session</option>
+                <option value="city-colors">City Colors</option>
+                <option value="forest-notes">Forest Notes</option>
+                <option value="watercolor-morning">Watercolor Morning</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="4" placeholder="Tell us a little about your creative goals"></textarea>
+            </label>
+
+            <button type="submit" class="button primary submit-button">Send request</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a href="#home" class="brand footer-brand">
+            <span class="brand-mark">W</span>
+            <span>WildSketch</span>
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#classes">Classes</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#register">Register</a>
+        </div>
+
+        <p>© <span id="year"></span> WildSketch</p>
+      </div>
+    </footer>
+
+    <div id="success-modal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button type="button" class="modal-close" aria-label="Close">×</button>
+        <h3 id="modal-title">Thank you!</h3>
+        <p>Your workshop request has been received. We will contact you with the next steps soon.</p>
+        <button type="button" class="button primary modal-button">Close</button>
       </div>
     </div>
 

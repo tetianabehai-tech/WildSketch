@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WildSketch — outdoor art workshops, creative community, and hands-on drawing experiences."
+    />
+    <title>WildSketch</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <svg aria-hidden="true" class="svg-sprite">
+      <symbol id="icon-logo" viewBox="0 0 80 80">
+        <rect x="8" y="8" width="64" height="64" rx="18" fill="currentColor" opacity="0.18"/>
+        <path d="M23 55V25.5L35.5 47L47.5 25.5V55H57V18H47.5L35.5 39.5L23.5 18H14V55H23Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-location" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/>
+      </symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24">
+        <path fill="currentColor" d="m12 2.5 2.8 5.7 6.3 1-4.5 4.4 1.1 6.2-5.7-3-5.7 3 1.1-6.2L2.9 9.2l6.3-1L12 2.5Z"/>
+      </symbol>
+      <symbol id="icon-pen" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25Zm13.71-9.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.3 1.3 3.75 3.75 1.3-1.3Z"/>
+      </symbol>
+      <symbol id="icon-spark" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 1.5 14.5 8l6.5 2.5L14.5 13 12 19.5 9.5 13 3 10.5 9.5 8 12 1.5Z"/>
+      </symbol>
+      <symbol id="icon-group" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M16 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-8 1a3 3 0 1 0-3-3 3 3 0 0 0 3 3Zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-1.5c0-2.33-4.67-3.5-7-3.5Zm8 0c.29 0 .62.02.97.05 1.54.38 2.68 1.5 2.68 3.45V19h6v-1.5c0-2.33-4.67-3.5-7-3.5Z"/>
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="container header-container">
+        <a class="logo-link" href="#home" aria-label="WildSketch home">
+          <svg class="logo-icon" aria-hidden="true"><use href="#icon-logo"></use></svg>
+          <span>WildSketch</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#events">Events</a>
+          <a href="#team">Team</a>
+          <a href="#testimonials">Feedbacks</a>
+        </nav>
+
+        <a class="button button-primary nav-button" href="#register">Register</a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle menu</span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <a href="#home">Home</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#events">Events</a>
+          <a href="#team">Team</a>
+          <a href="#testimonials">Feedbacks</a>
+          <a class="button button-primary mobile-button" href="#register">Register</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow">WildSketch community</p>
+            <h1>Unleash Your Creativity in Nature's Embrace</h1>
+            <p class="lead">
+              Join inspiring outdoor art sessions, reconnect with your creative rhythm,
+              and discover a welcoming community of makers, dreamers, and curious souls.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#register">Register</a>
+              <a class="button button-secondary" href="#events">Learn More</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="WildSketch statistics">
+              <li>
+                <strong>120+</strong>
+                <span>art sessions</span>
+              </li>
+              <li>
+                <strong>18k</strong>
+                <span>community</span>
+              </li>
+              <li>
+                <strong>4.9</strong>
+                <span>rating</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-media">
+            <img
+              srcset="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80 1x, https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1800&q=80 2x"
+              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80"
+              alt="Artist drawing outdoors in nature"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits section" id="benefits">
+        <div class="container benefit-layout">
+          <div class="benefit-visual">
+            <img
+              srcset="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80 1x, https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=80 2x"
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80"
+              alt="Person drawing in a park"
+            />
+          </div>
+
+          <div class="benefit-content">
+            <p class="eyebrow">Creative energy</p>
+            <h2>Reconnect with yourself through the art of outdoor drawing</h2>
+
+            <ul class="feature-list">
+              <li>
+                <div class="feature-icon" aria-hidden="true">
+                  <svg><use href="#icon-pen"></use></svg>
+                </div>
+                <div>
+                  <h3>Guided inspiration</h3>
+                  <p>Learn approachable techniques while enjoying a calm outdoor setting.</p>
+                </div>
+              </li>
+              <li>
+                <div class="feature-icon" aria-hidden="true">
+                  <svg><use href="#icon-spark"></use></svg>
+                </div>
+                <div>
+                  <h3>New perspectives</h3>
+                  <p>See everyday landscapes through fresh eyes and creative observation.</p>
+                </div>
+              </li>
+              <li>
+                <div class="feature-icon" aria-hidden="true">
+                  <svg><use href="#icon-group"></use></svg>
+                </div>
+                <div>
+                  <h3>Creative community</h3>
+                  <p>Meet thoughtful, like-minded people who value calm and expression.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Our creations</p>
+            <h2>Artistic Showcase</h2>
+            <p>Moments, textures, and stories collected from our latest sessions and nature-led workshops.</p>
+          </div>
+
+          <ul class="gallery-grid" aria-label="Artwork gallery">
+            <li class="gallery-item tall"><img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=80" alt="Watercolor landscape" /></li>
+            <li class="gallery-item"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Sketchbook illustration" /></li>
+            <li class="gallery-item"><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80" alt="Forest art scene" /></li>
+            <li class="gallery-item wide"><img src="https://images.unsplash.com/photo-1515405295579-ba7b45403062?auto=format&fit=crop&w=1200&q=80" alt="Outdoor painting session" /></li>
+            <li class="gallery-item"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80" alt="Creative artist portrait" /></li>
+            <li class="gallery-item"><img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=80" alt="Color and paper artwork" /></li>
+            <li class="gallery-item"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Watercolor paper texture" /></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="events section" id="events">
+        <div class="container">
+          <div class="section-header align-center">
+            <p class="eyebrow">Workshop schedule</p>
+            <h2>Explore Our Upcoming Workshop Schedule</h2>
+            <p>Choose a format that suits your pace and enjoy a calm, creative session outdoors.</p>
+          </div>
+
+          <ul class="event-list" aria-label="Upcoming events">
+            <li class="event-card">
+              <img src="https://images.unsplash.com/photo-1515405295579-ba7b45403062?auto=format&fit=crop&w=900&q=80" alt="Sunlit sketching workshop" />
+              <div class="event-body">
+                <h3>Sunlit Sketching</h3>
+                <p class="event-location">
+                  <svg aria-hidden="true"><use href="#icon-location"></use></svg>
+                  <a href="https://maps.google.com/?q=Lake+Park+London" target="_blank" rel="noreferrer">Lake Park, London</a>
+                </p>
+                <p class="event-meta">April 12 • 9:00 AM</p>
+                <a class="button button-primary small-button" href="#register">Register</a>
+              </div>
+            </li>
+            <li class="event-card">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Watercolor workshop" />
+              <div class="event-body">
+                <h3>Color in Nature</h3>
+                <p class="event-location">
+                  <svg aria-hidden="true"><use href="#icon-location"></use></svg>
+                  <a href="https://maps.google.com/?q=Maple+Garden+Studio" target="_blank" rel="noreferrer">Maple Garden Studio</a>
+                </p>
+                <p class="event-meta">April 18 • 11:30 AM</p>
+                <a class="button button-primary small-button" href="#register">Register</a>
+              </div>
+            </li>
+            <li class="event-card">
+              <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80" alt="Forest collage workshop" />
+              <div class="event-body">
+                <h3>Forest Collage</h3>
+                <p class="event-location">
+                  <svg aria-hidden="true"><use href="#icon-location"></use></svg>
+                  <a href="https://maps.google.com/?q=Willow+Trail+Eco+Center" target="_blank" rel="noreferrer">Willow Trail Eco Center</a>
+                </p>
+                <p class="event-meta">April 24 • 2:00 PM</p>
+                <a class="button button-primary small-button" href="#register">Register</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="team section" id="team">
+        <div class="container">
+          <div class="section-header align-center">
+            <p class="eyebrow">Our team</p>
+            <h2>Our team</h2>
+            <p>Meet the artists and guides shaping every mindful, welcoming workshop.</p>
+          </div>
+
+          <ul class="team-list" aria-label="Our team members">
+            <li class="member-card">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=80" alt="Sarah portrait" />
+              <h3>Sarah</h3>
+              <p>Creative mentor</p>
+            </li>
+            <li class="member-card">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" alt="Ali portrait" />
+              <h3>Ali</h3>
+              <p>Illustration coach</p>
+            </li>
+            <li class="member-card">
+              <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=700&q=80" alt="Emma portrait" />
+              <h3>Emma</h3>
+              <p>Workshop host</p>
+            </li>
+            <li class="member-card">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=80" alt="Leo portrait" />
+              <h3>Leo</h3>
+              <p>Art guide</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="testimonials section" id="testimonials">
+        <div class="container">
+          <div class="section-header align-center">
+            <p class="eyebrow">Customer testimonials</p>
+            <h2>Customer testimonials</h2>
+          </div>
+
+          <ul class="testimonial-list" aria-label="Customer testimonials">
+            <li class="testimonial-item">
+              <div class="rating" aria-label="Five stars">
+                <svg><use href="#icon-star"></use></svg>
+                <svg><use href="#icon-star"></use></svg>
+                <svg><use href="#icon-star"></use></svg>
+                <svg><use href="#icon-star"></use></svg>
+                <svg><use href="#icon-star"></use></svg>
+              </div>
+              <p>
+                “A beautiful space where creativity feels effortless. I left feeling inspired,
+                grounded, and deeply calm.”
+              </p>
+              <strong>— Maya</strong>
+            </li>
+            <li class="testimonial-item">
+              <div class="rating" aria-label="Five stars">
+                <svg><use href="#icon-star"></use></svg>
+                <svg><use href="#icon-star"></use></svg>
+                <svg><use href="#icon-star"></use></svg>
+                <svg><use href="#icon-star"></use></svg>
+                <svg><use href="#icon-star"></use></svg>
+              </div>
+              <p>
+                “The workshop was gentle, joyful, and beautifully paced. Every detail felt personal and intentional.”
+              </p>
+              <strong>— Daniel</strong>
+            </li>
+            <li class="testimonial-item">
+              <div class="rating" aria-label="Five stars">
+                <svg><use href="#icon-star"></use></svg>
+                <svg><use href="#icon-star"></use></svg>
+                <svg><use href="#icon-star"></use></svg>
+                <svg><use href="#icon-star"></use></svg>
+                <svg><use href="#icon-star"></use></svg>
+              </div>
+              <p>
+                “The best creative escape I’ve had in a long time — relaxed, inspiring, and full of heart.”
+              </p>
+              <strong>— Olivia</strong>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="register section" id="register">
+        <div class="container register-layout">
+          <div class="register-visual">
+            <img
+              srcset="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80 1x, https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1800&q=80 2x"
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80"
+              alt="Sketching outdoors"
+            />
+          </div>
+
+          <div class="register-form-wrapper">
+            <p class="eyebrow">Register</p>
+            <h2>Register</h2>
+
+            <form id="register-form" novalidate>
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required pattern="^[a-zA-Z\s\.]{5,64}$" />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                />
+              </label>
+
+              <label>
+                <span>Describe your skills</span>
+                <textarea name="message" rows="5" maxlength="500" placeholder="Tell us a bit about your artistic background"></textarea>
+              </label>
+
+              <button class="button button-primary" type="submit">Register</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <a class="logo-link" href="#home" aria-label="WildSketch home">
+          <svg class="logo-icon" aria-hidden="true"><use href="#icon-logo"></use></svg>
+          <span>WildSketch</span>
+        </a>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#events">Events</a>
+          <a href="#team">Team</a>
+          <a href="#register">Register</a>
+        </nav>
+
+        <p>© <span id="year"></span> WildSketch. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="modal" id="success-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Close success window">×</button>
+        <h3 id="modal-title">Success subscription</h3>
+        <p>Fresh brews, special offers, and cozy updates are coming your way</p>
+        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Art workshop scene" />
+        <button class="button button-primary modal-button" type="button">Close</button>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

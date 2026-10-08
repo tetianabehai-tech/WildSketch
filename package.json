@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://YOUR_USERNAME.github.io/project-wild-sketch-01",
+  "homepage": "https://tetianabehai-tech.github.io/WildSketch",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

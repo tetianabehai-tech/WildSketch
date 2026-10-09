@@ -44,6 +44,7 @@ for (const width of [375, 600, 768, 1024, 1440, 1920]) {
   }
   await page.locator("#name").fill("Test User");
   await page.locator("#email").fill("test@example.com");
+  await page.locator("#event").selectOption("1");
   await page.locator(".register-form button").click();
   if ((await page.locator("#name").inputValue()) !== "Test User")
     throw Error("Form erased input");

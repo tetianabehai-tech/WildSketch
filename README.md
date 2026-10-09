@@ -1,56 +1,43 @@
-# WildSketch
+﻿# WildSketch
 
-A responsive single-page landing site for an outdoor art community and creative workshop brand. The project includes a hero section, benefits, gallery, events, team, testimonials, registration form, and a mobile menu.
+Індивідуальний навчальний проєкт: HTML, CSS, JavaScript та Vite.
 
-## Project structure
+## Поточна реалізація
 
-- `index.html` — page layout and semantic sections
-- `src/styles.css` — responsive styling and component design
-- `src/main.js` — mobile menu logic and form modal behavior
-- `favicon.svg` — site favicon
-- `vite.config.js` — Vite configuration
-- `TASKS.md` — task workflow notes
-- `WORK_PLAN.md` — execution plan
+Header, Hero, Benefits, Gallery, Events, Register, Footer і мобільне меню. Структура відповідає наданим скриншотам Design 2. Точні параметри Figma й офіційні критерії Google Sheets ще не перевірені.
 
-## Stack
+## Локальний запуск
 
-- HTML5
-- CSS3
-- JavaScript
-- Vite
-
-## Run locally
-
-```bash
+```sh
 npm install
 npm run dev
 ```
 
-Open the local URL shown in the terminal, usually:
+Адреса: http://localhost:5173/ (остаточну адресу виводить Vite).
 
-```text
-http://localhost:4173/project-wild-sketch-01/
-```
-
-## Production build
-
-```bash
+```sh
 npm run build
+npm run preview
 ```
 
-## Deploy to GitHub Pages
+Попередній перегляд збірки: http://localhost:4173/.
 
-1. Create a new GitHub repository.
-2. Push the project to the repository.
-3. Update the `homepage` field in `package.json` if needed.
-4. Run:
+Якщо Node.js відсутній у PATH на Windows, додайте C:\Program Files\nodejs до PATH або використовуйте повний шлях до npm.cmd.
 
-```bash
-npm run deploy
-```
+## Форма
 
-5. In GitHub, open Settings → Pages and choose the `gh-pages` branch as the source.
+Підключення до сервера відсутнє. Вбудована валідація перевіряє обов'язкові поля й email. Форма не надсилає та не очищає дані й показує повідомлення про недоступність реєстрації.
 
-## Notes
+## Перевірки
 
-The project is built as a complete MVP landing page and is ready for final presentation, review, and GitHub deployment.
+2026-10-09: node --check src/main.js та npm run build пройшли. Chrome: перевірено 375, 600, 768, 1024, 1440 і 1920 px; зображення, переповнення, меню та форма пройшли перевірки. Зображення оптимізовані у WebP (400/800/1400 px), PNG-оригінали збережено в assets/originals; у публічну збірку вони не входять. Pixel-perfect відповідність не підтверджена.
+
+## GitHub
+
+Remote уже налаштований. node_modules, dist, env-файли та журнали ігноруються. Публікація: https://tetianabehai-tech.github.io/WildSketch/. Push, merge та deploy виконуються лише після окремого підтвердження власниці.
+
+## Перевірка
+
+Node.js 22.12+ (перевірено на 24.20.0).
+
+Команди: npm run build; npm exec html-validate -- index.html; npm exec prettier -- --check index.html src scripts package.json README.md vite.config.js; node scripts/check-browser.mjs (Chrome і запущений npm run dev).

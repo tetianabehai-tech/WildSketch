@@ -1,7 +1,7 @@
-﻿# GitHub
+# GitHub Pages
 
-Репозиторій: https://github.com/tetianabehai-tech/WildSketch
+Target repository: https://github.com/tetianabehai-tech/WildSketch
 
-Сайт: https://tetianabehai-tech.github.io/WildSketch/
+Expected site URL: https://tetianabehai-tech.github.io/WildSketch/
 
-GitHub Pages: гілка gh-pages, коренева папка. Збірка й публікація: npm run deploy. Публікуйте лише після перевірок.
+Verify the repository remote before publishing. Run npm run build and npm test, then npm run deploy to publish dist/ to gh-pages. In GitHub Pages settings select the gh-pages branch. No deployment was performed as part of local implementation.

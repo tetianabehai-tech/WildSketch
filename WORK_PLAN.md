@@ -1,11 +1,3 @@
-﻿# WildSketch — стан індивідуального проєкту
+# Implementation status
 
-Реалізовано секції Design 2: Header, Hero, Benefits, Gallery, Events, Register, Footer. Team і Testimonials відсутні у цій версії наданого макета.
-
-Mobile First: базова мобільна верстка, межі 768/1440 px. Перевірки Chrome: 375, 600, 768, 1024, 1440, 1920 px; зображення, переповнення, меню, Escape, навігація, збереження полів форми.
-
-Форма має HTML-валідацію, але сервер не підключено; повідомлення про відправлення не імітується.
-
-Підтвердження pixel-perfect і критеріїв GoIT потребує оригінальних вимірів Figma та Google Sheets із ТЗ.
-
-Робота індивідуальна. Публікація у наявний GitHub-репозиторій і GitHub Pages дозволена власницею 2026-10-09.
+All requested sections are implemented. See REQUIREMENTS_STATUS.md for checks and source limitations. Team and Feedbacks use labelled demonstration content. The registration form is a frontend MVP without a backend.

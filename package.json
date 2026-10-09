@@ -9,7 +9,11 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "format": "prettier --write index.html src scripts package.json *.md vite.config.js",
+    "format:check": "prettier --check index.html src scripts package.json *.md vite.config.js",
+    "validate": "html-validate index.html",
+    "test": "node scripts/verify.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.0",

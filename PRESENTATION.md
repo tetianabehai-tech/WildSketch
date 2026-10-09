@@ -1,11 +1,5 @@
-﻿# WildSketch — стан індивідуального проєкту
+# WildSketch presentation
 
-Реалізовано секції Design 2: Header, Hero, Benefits, Gallery, Events, Register, Footer. Team і Testimonials відсутні у цій версії наданого макета.
+Demonstrate desktop and mobile layouts, navigation, full-height menu, Gallery, Events, Team, Feedbacks and registration validation. Select Register on an event card to show automatic workshop selection. Explain that Team/Feedbacks use labelled samples and registration does not submit to a server.
 
-Mobile First: базова мобільна верстка, межі 768/1440 px. Перевірки Chrome: 375, 600, 768, 1024, 1440, 1920 px; зображення, переповнення, меню, Escape, навігація, збереження полів форми.
-
-Форма має HTML-валідацію, але сервер не підключено; повідомлення про відправлення не імітується.
-
-Підтвердження pixel-perfect і критеріїв GoIT потребує оригінальних вимірів Figma та Google Sheets із ТЗ.
-
-Робота індивідуальна. Публікація у наявний GitHub-репозиторій і GitHub Pages дозволена власницею 2026-10-09.
+Run npm run dev for a local demonstration or npm run preview after npm run build.

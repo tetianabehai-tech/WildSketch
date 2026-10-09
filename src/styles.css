@@ -468,3 +468,56 @@ h3 {
     transition: none;
   }
 }
+
+/* Keep illustrations proportional and bounded on every viewport. */
+.hero-art {
+  width: 100%;
+  max-width: 320px;
+  justify-self: center;
+}
+.benefits-art {
+  width: 100%;
+  max-width: 320px;
+  justify-self: center;
+}
+.hero-art img,
+.benefits-art img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.contact-image {
+  height: auto;
+  max-height: 400px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.event-image {
+  max-height: 220px;
+}
+@media (min-width: 768px) {
+  .hero-art {
+    max-width: 480px;
+  }
+  .benefits-art {
+    max-width: 440px;
+  }
+  .contact-image {
+    max-height: 480px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+  .hero-art {
+    max-width: 560px;
+  }
+  .benefits-art {
+    max-width: 520px;
+  }
+  .contact-image {
+    max-height: 540px;
+  }
+}

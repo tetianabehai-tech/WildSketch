@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="WildSketch — outdoor art workshops, creative community, and hands-on drawing experiences."
+      content="WildSketch outdoor art workshops, creative community, and hands-on drawing experiences."
     />
     <title>WildSketch</title>
     <link rel="icon" type="image/svg+xml" href="./assets/favicon-mxADsXlq.svg" />
@@ -19,8 +19,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <script type="module" crossorigin src="./assets/index-CPTn50sW.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Dfjzr_kl.css">
+    <script type="module" crossorigin src="./assets/index-BUMQHkXg.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CtT10ZWW.css">
   </head>
   <body>
     <header class="site-header">
@@ -32,6 +32,8 @@
           <a href="#benefits">Benefits</a>
           <a href="#gallery">Gallery</a>
           <a href="#events">Events</a>
+          <a href="#team">Team</a>
+          <a href="#feedbacks">Feedbacks</a>
         </nav>
         <div class="header-actions">
           <a href="#register" class="button button-small">Register</a>
@@ -55,6 +57,8 @@
         <a href="#benefits">Benefits</a>
         <a href="#gallery">Gallery</a>
         <a href="#events">Events</a>
+        <a href="#team">Team</a>
+        <a href="#feedbacks">Feedbacks</a>
       </nav>
     </header>
 
@@ -70,14 +74,14 @@
             </p>
             <div class="hero-actions">
               <a href="#register" class="button">Register</a>
-              <a href="#benefits" class="button button-outline">Learn More</a>
+              <a href="#events" class="button button-outline">Learn More</a>
             </div>
           </div>
           <div class="hero-art">
             <img
               src="./images/hero-watercolor-800.webp"
-              srcset="./images/hero-watercolor-400.webp 400w, ./images/hero-watercolor-800.webp 800w, ./images/hero-watercolor-1400.webp 1400w"
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
+              srcset="./images/hero-watercolor-400.webp 400w, ./images/hero-watercolor-800.webp 800w, ./images/hero-watercolor-1400.webp 1400w, ./images/hero-watercolor-1800.webp 1800w"
+              sizes="(min-width: 1440px) 808px, (min-width: 768px) 480px, 320px"
               width="2000"
               height="2000"
               alt="Watercolor illustration of a cottage among flowers and trees"
@@ -92,7 +96,7 @@
             <img
               src="./images/benefits-illustration-800.webp"
               srcset="./images/benefits-illustration-400.webp 400w, ./images/benefits-illustration-800.webp 800w, ./images/benefits-illustration-1400.webp 1400w"
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
+              sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
               width="4096"
               height="3880"
               alt="Watercolor characters and leaves"
@@ -100,40 +104,52 @@
           </div>
           <div class="benefits-content">
             <h2>Reconnect with yourself through the art of outdoor drawing</h2>
-            <div class="benefits-list">
-              <article class="benefit-item">
-                <img src="./images/icon-spa.svg" alt="" />
-                <div>
-                  <h3>Relieves stress and anxiety</h3>
-                  <p>
-                    Drawing in nature helps you unwind, clear your mind, and
-                    escape daily worries in a peaceful setting.
-                  </p>
-                </div>
-              </article>
-              <article class="benefit-item">
-                <img src="./images/icon-sun.svg" alt="" />
-                <div>
-                  <h3>Sparks creativity</h3>
-                  <p>
-                    Whether you’re a beginner or experienced, plein air drawing
-                    encourages creative thinking and helps you see beauty in the
-                    details.
-                  </p>
-                </div>
-              </article>
-              <article class="benefit-item">
-                <img src="./images/icon-leaf.svg" alt="" />
-                <div>
-                  <h3>Quality time in nature</h3>
-                  <p>
-                    Plein air sessions combine fresh air, gentle movement, and
-                    mindful observation — a perfect blend of rest and
-                    inspiration.
-                  </p>
-                </div>
-              </article>
-            </div>
+            <ul class="benefits-list">
+              <li>
+                <article class="benefit-item">
+                  <svg class="icon" width="32" height="32" aria-hidden="true">
+                    <use href="./images/sprite.svg#icon-spa"></use>
+                  </svg>
+                  <div>
+                    <h3>Relieves stress and anxiety</h3>
+                    <p>
+                      Drawing in nature helps you unwind, clear your mind, and
+                      escape daily worries in a peaceful setting.
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="benefit-item">
+                  <svg class="icon" width="32" height="32" aria-hidden="true">
+                    <use href="./images/sprite.svg#icon-sun"></use>
+                  </svg>
+                  <div>
+                    <h3>Sparks creativity</h3>
+                    <p>
+                      Whether you’re a beginner or experienced, plein air
+                      drawing encourages creative thinking and helps you see
+                      beauty in the details.
+                    </p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="benefit-item">
+                  <svg class="icon" width="32" height="32" aria-hidden="true">
+                    <use href="./images/sprite.svg#icon-leaf"></use>
+                  </svg>
+                  <div>
+                    <h3>Quality time in nature</h3>
+                    <p>
+                      Plein air sessions combine fresh air, gentle movement, and
+                      mindful observation — a perfect blend of rest and
+                      inspiration.
+                    </p>
+                  </div>
+                </article>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -144,80 +160,94 @@
           <p>Explore the creativity captured in our workshops.</p>
         </div>
         <div class="gallery-grid">
-          <div class="gallery-row gallery-row-landscapes">
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-hills-800.webp"
-              srcset="./images/gallery-hills-400.webp 400w, ./images/gallery-hills-800.webp 800w, ./images/gallery-hills-1400.webp 1400w"
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
-              width="2560"
-              height="2560"
-              alt="Watercolor landscape of rolling hills"
-            />
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-mountains-800.webp"
-              srcset="./images/gallery-mountains-400.webp 400w, ./images/gallery-mountains-800.webp 800w, ./images/gallery-mountains-1400.webp 1400w"
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
-              width="1667"
-              height="1667"
-              alt="Watercolor mountain landscape"
-            />
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-forest-800.webp"
-              srcset="./images/gallery-forest-400.webp 400w, ./images/gallery-forest-800.webp 800w, ./images/gallery-forest-1400.webp 1400w"
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
-              width="4096"
-              height="4096"
-              alt="Watercolor evergreen forest"
-            />
-          </div>
-          <div class="gallery-row gallery-row-artworks">
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-river-800.webp"
-              srcset="./images/gallery-river-400.webp 400w, ./images/gallery-river-800.webp 800w, ./images/gallery-river-1400.webp 1400w"
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
-              width="2000"
-              height="2000"
-              alt="Watercolor river through green hills"
-            />
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-flower-800.webp"
-              srcset="./images/gallery-flower-400.webp 400w, ./images/gallery-flower-800.webp 800w, ./images/gallery-flower-1400.webp 1400w"
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
-              width="4096"
-              height="4096"
-              alt="Watercolor flower study"
-            />
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-trees-800.webp"
-              srcset="./images/gallery-trees-400.webp 400w, ./images/gallery-trees-800.webp 800w, ./images/gallery-trees-1400.webp 1400w"
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
-              width="4096"
-              height="4096"
-              alt="Outdoor watercolor sketchbook studies"
-            />
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-garden-800.webp"
-              srcset="./images/gallery-garden-400.webp 400w, ./images/gallery-garden-800.webp 800w, ./images/gallery-garden-1400.webp 1400w"
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
-              width="2000"
-              height="2000"
-              alt="Colorful garden and botanical sketches"
-            />
-          </div>
+          <ul class="gallery-row gallery-row-landscapes">
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-hills-800.webp"
+                srcset="./images/gallery-hills-400.webp 400w, ./images/gallery-hills-800.webp 800w, ./images/gallery-hills-1400.webp 1400w"
+                sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                width="2560"
+                height="2560"
+                alt="Watercolor landscape of rolling hills"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-mountains-800.webp"
+                srcset="./images/gallery-mountains-400.webp 400w, ./images/gallery-mountains-800.webp 800w, ./images/gallery-mountains-1400.webp 1400w"
+                sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                width="1667"
+                height="1667"
+                alt="Watercolor mountain landscape"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-forest-800.webp"
+                srcset="./images/gallery-forest-400.webp 400w, ./images/gallery-forest-800.webp 800w, ./images/gallery-forest-1400.webp 1400w"
+                sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                width="4096"
+                height="4096"
+                alt="Watercolor evergreen forest"
+              />
+            </li>
+          </ul>
+          <ul class="gallery-row gallery-row-artworks">
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-river-800.webp"
+                srcset="./images/gallery-river-400.webp 400w, ./images/gallery-river-800.webp 800w, ./images/gallery-river-1400.webp 1400w"
+                sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                width="2000"
+                height="2000"
+                alt="Watercolor river through green hills"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-flower-800.webp"
+                srcset="./images/gallery-flower-400.webp 400w, ./images/gallery-flower-800.webp 800w, ./images/gallery-flower-1400.webp 1400w"
+                sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                width="4096"
+                height="4096"
+                alt="Watercolor flower study"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-trees-800.webp"
+                srcset="./images/gallery-trees-400.webp 400w, ./images/gallery-trees-800.webp 800w, ./images/gallery-trees-1400.webp 1400w"
+                sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                width="4096"
+                height="4096"
+                alt="Outdoor watercolor sketchbook studies"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-garden-800.webp"
+                srcset="./images/gallery-garden-400.webp 400w, ./images/gallery-garden-800.webp 800w, ./images/gallery-garden-1400.webp 1400w"
+                sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                width="2000"
+                height="2000"
+                alt="Colorful garden and botanical sketches"
+              />
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -230,133 +260,397 @@
               nature while honing your artistic skills.
             </p>
           </div>
-          <div class="event-list">
-            <article class="event-card">
-              <img
-                class="event-image"
-                loading="lazy"
-                decoding="async"
-                src="./images/event-morning-800.webp"
-                srcset="./images/event-morning-400.webp 400w, ./images/event-morning-800.webp 800w, ./images/event-morning-1400.webp 1400w"
-                sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
-                width="2731"
-                height="4096"
-                alt="Artist painting outdoors"
-              />
-              <div class="event-details">
-                <h3>Morning Light Sketching</h3>
-                <div class="event-meta">
-                  <img src="./images/icon-map.svg" alt="" /><span
-                    >Central Park Meadow</span
-                  >
+          <ul class="event-list">
+            <li>
+              <article class="event-card">
+                <img
+                  class="event-image"
+                  loading="lazy"
+                  decoding="async"
+                  src="./images/event-morning-800.webp"
+                  srcset="./images/event-morning-400.webp 400w, ./images/event-morning-800.webp 800w, ./images/event-morning-1400.webp 1400w"
+                  sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                  width="2731"
+                  height="4096"
+                  alt="Artist painting outdoors"
+                />
+                <div class="event-details">
+                  <h3>Morning Light Sketching</h3>
+                  <div class="event-meta">
+                    <svg class="icon" width="32" height="32" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-map"></use></svg
+                    ><a
+                      href="https://www.google.com/maps/search/?api=1&amp;query=Central%20Park%20Meadow"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Central Park Meadow</a
+                    >
+                  </div>
+                  <time datetime="2025-06-09T08:00">09 Jun 8:00 am</time>
                 </div>
-                <time datetime="2025-06-09T08:00">09 Jun 8:00 am</time>
-              </div>
-              <a href="#register" class="button button-outline event-register"
-                >Register</a
-              >
-            </article>
-            <article class="event-card">
-              <img
-                class="event-image"
-                loading="lazy"
-                decoding="async"
-                src="./images/event-wildflowers-800.webp"
-                srcset="./images/event-wildflowers-400.webp 400w, ./images/event-wildflowers-800.webp 800w, ./images/event-wildflowers-1400.webp 1400w"
-                sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
-                width="3960"
-                height="2640"
-                alt="Young artist painting in a park"
-              />
-              <div class="event-details">
-                <h3>Floral Focus: Painting Wildflowers</h3>
-                <div class="event-meta">
-                  <img src="./images/icon-map.svg" alt="" /><span
-                    >Riverside Botanical Trail</span
-                  >
+                <a
+                  href="#register"
+                  class="button button-outline event-register"
+                  data-event="1"
+                  >Register</a
+                >
+              </article>
+            </li>
+            <li>
+              <article class="event-card">
+                <img
+                  class="event-image"
+                  loading="lazy"
+                  decoding="async"
+                  src="./images/event-wildflowers-800.webp"
+                  srcset="./images/event-wildflowers-400.webp 400w, ./images/event-wildflowers-800.webp 800w, ./images/event-wildflowers-1400.webp 1400w"
+                  sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                  width="3960"
+                  height="2640"
+                  alt="Young artist painting in a park"
+                />
+                <div class="event-details">
+                  <h3>Floral Focus: Painting Wildflowers</h3>
+                  <div class="event-meta">
+                    <svg class="icon" width="32" height="32" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-map"></use></svg
+                    ><a
+                      href="https://www.google.com/maps/search/?api=1&amp;query=Riverside%20Botanical%20Trail"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Riverside Botanical Trail</a
+                    >
+                  </div>
+                  <time datetime="2025-06-10T17:00">10 Jun 5:00 pm</time>
                 </div>
-                <time datetime="2025-06-10T17:00">10 Jun 5:00 pm</time>
-              </div>
-              <a href="#register" class="button button-outline event-register"
-                >Register</a
-              >
-            </article>
-            <article class="event-card">
-              <img
-                class="event-image"
-                loading="lazy"
-                decoding="async"
-                src="./images/event-color-800.webp"
-                srcset="./images/event-color-400.webp 400w, ./images/event-color-800.webp 800w, ./images/event-color-1400.webp 1400w"
-                sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
-                width="4096"
-                height="2733"
-                alt="Artist holding a palette while painting"
-              />
-              <div class="event-details">
-                <h3>Color &amp; Composition Basics</h3>
-                <div class="event-meta">
-                  <img src="./images/icon-map.svg" alt="" /><span
-                    >Forest Edge Retreat</span
-                  >
+                <a
+                  href="#register"
+                  class="button button-outline event-register"
+                  data-event="2"
+                  >Register</a
+                >
+              </article>
+            </li>
+            <li>
+              <article class="event-card">
+                <img
+                  class="event-image"
+                  loading="lazy"
+                  decoding="async"
+                  src="./images/event-color-800.webp"
+                  srcset="./images/event-color-400.webp 400w, ./images/event-color-800.webp 800w, ./images/event-color-1400.webp 1400w"
+                  sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                  width="4096"
+                  height="2733"
+                  alt="Artist holding a palette while painting"
+                />
+                <div class="event-details">
+                  <h3>Color &amp; Composition Basics</h3>
+                  <div class="event-meta">
+                    <svg class="icon" width="32" height="32" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-map"></use></svg
+                    ><a
+                      href="https://www.google.com/maps/search/?api=1&amp;query=Forest%20Edge%20Retreat"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Forest Edge Retreat</a
+                    >
+                  </div>
+                  <time datetime="2025-06-11T19:00">11 Jun 7:00 pm</time>
                 </div>
-                <time datetime="2025-06-11T19:00">11 Jun 7:00 pm</time>
-              </div>
-              <a href="#register" class="button button-outline event-register"
-                >Register</a
-              >
-            </article>
-            <article class="event-card">
-              <img
-                class="event-image"
-                loading="lazy"
-                decoding="async"
-                src="./images/event-stillness-800.webp"
-                srcset="./images/event-stillness-400.webp 400w, ./images/event-stillness-800.webp 800w, ./images/event-stillness-1400.webp 1400w"
-                sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
-                width="3960"
-                height="2640"
-                alt="Mother and daughter drawing together outdoors"
-              />
-              <div class="event-details">
-                <h3>Drawing Stillness: Meditative Sketching</h3>
-                <div class="event-meta">
-                  <img src="./images/icon-map.svg" alt="" /><span
-                    >Willow Grove Field</span
-                  >
+                <a
+                  href="#register"
+                  class="button button-outline event-register"
+                  data-event="3"
+                  >Register</a
+                >
+              </article>
+            </li>
+            <li>
+              <article class="event-card">
+                <img
+                  class="event-image"
+                  loading="lazy"
+                  decoding="async"
+                  src="./images/event-stillness-800.webp"
+                  srcset="./images/event-stillness-400.webp 400w, ./images/event-stillness-800.webp 800w, ./images/event-stillness-1400.webp 1400w"
+                  sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                  width="3960"
+                  height="2640"
+                  alt="Mother and daughter drawing together outdoors"
+                />
+                <div class="event-details">
+                  <h3>Drawing Stillness: Meditative Sketching</h3>
+                  <div class="event-meta">
+                    <svg class="icon" width="32" height="32" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-map"></use></svg
+                    ><a
+                      href="https://www.google.com/maps/search/?api=1&amp;query=Willow%20Grove%20Field"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Willow Grove Field</a
+                    >
+                  </div>
+                  <time datetime="2025-06-14T20:00">14 Jun 8:00 pm</time>
                 </div>
-                <time datetime="2025-06-14T20:00">14 Jun 8:00 pm</time>
-              </div>
-              <a href="#register" class="button button-outline event-register"
-                >Register</a
-              >
-            </article>
-            <article class="event-card">
-              <img
-                class="event-image"
-                loading="lazy"
-                decoding="async"
-                src="./images/event-golden-hour-800.webp"
-                srcset="./images/event-golden-hour-400.webp 400w, ./images/event-golden-hour-800.webp 800w, ./images/event-golden-hour-1400.webp 1400w"
-                sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
-                width="3936"
-                height="2624"
-                alt="Artist painting a landscape at sunset"
-              />
-              <div class="event-details">
-                <h3>Golden Hour Landscape Study</h3>
-                <div class="event-meta">
-                  <img src="./images/icon-map.svg" alt="" /><span
-                    >Sunset Ridge Hilltop</span
-                  >
+                <a
+                  href="#register"
+                  class="button button-outline event-register"
+                  data-event="4"
+                  >Register</a
+                >
+              </article>
+            </li>
+            <li>
+              <article class="event-card">
+                <img
+                  class="event-image"
+                  loading="lazy"
+                  decoding="async"
+                  src="./images/event-golden-hour-800.webp"
+                  srcset="./images/event-golden-hour-400.webp 400w, ./images/event-golden-hour-800.webp 800w, ./images/event-golden-hour-1400.webp 1400w"
+                  sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                  width="3936"
+                  height="2624"
+                  alt="Artist painting a landscape at sunset"
+                />
+                <div class="event-details">
+                  <h3>Golden Hour Landscape Study</h3>
+                  <div class="event-meta">
+                    <svg class="icon" width="32" height="32" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-map"></use></svg
+                    ><a
+                      href="https://www.google.com/maps/search/?api=1&amp;query=Sunset%20Ridge%20Hilltop"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Sunset Ridge Hilltop</a
+                    >
+                  </div>
+                  <time datetime="2025-06-15T20:00">15 Jun 8:00 pm</time>
                 </div>
-                <time datetime="2025-06-15T20:00">15 Jun 8:00 pm</time>
-              </div>
-              <a href="#register" class="button button-outline event-register"
-                >Register</a
-              >
-            </article>
+                <a
+                  href="#register"
+                  class="button button-outline event-register"
+                  data-event="5"
+                  >Register</a
+                >
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="team" class="team" aria-labelledby="team-title">
+        <div class="community-inner">
+          <div class="section-title gallery-title">
+            <h2 id="team-title">Our team</h2>
+            <p>Meet the artists behind our outdoor workshops.</p>
           </div>
+          <ul class="team-list">
+            <li class="team-card">
+              <article>
+                <img
+                  class="team-photo"
+                  src="./images/gallery-flower-400.webp"
+                  srcset="./images/gallery-flower-400.webp 400w, ./images/gallery-flower-800.webp 800w, ./images/gallery-flower-1400.webp 1400w"
+                  sizes="(min-width: 1440px) 416px, (min-width: 768px) 336px, calc(100vw - 32px)"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Temporary watercolor illustration for artist 1"
+                />
+                <div class="team-details">
+                  <p class="sample-label">Photo and details to be provided</p>
+                  <h3>Artist 1</h3>
+                  <p>Name and role coming soon.</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-card">
+              <article>
+                <img
+                  class="team-photo"
+                  src="./images/gallery-trees-400.webp"
+                  srcset="./images/gallery-trees-400.webp 400w, ./images/gallery-trees-800.webp 800w, ./images/gallery-trees-1400.webp 1400w"
+                  sizes="(min-width: 1440px) 416px, (min-width: 768px) 336px, calc(100vw - 32px)"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Temporary watercolor illustration for artist 2"
+                />
+                <div class="team-details">
+                  <p class="sample-label">Photo and details to be provided</p>
+                  <h3>Artist 2</h3>
+                  <p>Name and role coming soon.</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-card">
+              <article>
+                <img
+                  class="team-photo"
+                  src="./images/gallery-garden-400.webp"
+                  srcset="./images/gallery-garden-400.webp 400w, ./images/gallery-garden-800.webp 800w, ./images/gallery-garden-1400.webp 1400w"
+                  sizes="(min-width: 1440px) 416px, (min-width: 768px) 336px, calc(100vw - 32px)"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Temporary watercolor illustration for artist 3"
+                />
+                <div class="team-details">
+                  <p class="sample-label">Photo and details to be provided</p>
+                  <h3>Artist 3</h3>
+                  <p>Name and role coming soon.</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        id="feedbacks"
+        class="feedbacks"
+        aria-labelledby="feedbacks-title"
+      >
+        <div class="community-inner">
+          <div class="section-title gallery-title">
+            <h2 id="feedbacks-title">Customer testimonials</h2>
+            <p>
+              Preview with sample reviews. Participant feedback will be added
+              here.
+            </p>
+          </div>
+          <ul class="feedback-list">
+            <li class="feedback-card">
+              <article>
+                <p class="sample-label">Sample review</p>
+                <ul
+                  class="rating"
+                  aria-label="Example rating: 5 out of 5 stars"
+                >
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <blockquote>
+                  <p>
+                    A peaceful way to slow down, notice the landscape, and make
+                    time for drawing outdoors.
+                  </p>
+                  <footer>Sample participant 1</footer>
+                </blockquote>
+              </article>
+            </li>
+            <li class="feedback-card">
+              <article>
+                <p class="sample-label">Sample review</p>
+                <ul
+                  class="rating"
+                  aria-label="Example rating: 5 out of 5 stars"
+                >
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <blockquote>
+                  <p>
+                    The workshop helped me explore colour and enjoy the process
+                    of creating in nature.
+                  </p>
+                  <footer>Sample participant 2</footer>
+                </blockquote>
+              </article>
+            </li>
+            <li class="feedback-card">
+              <article>
+                <p class="sample-label">Sample review</p>
+                <ul
+                  class="rating"
+                  aria-label="Example rating: 5 out of 5 stars"
+                >
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <blockquote>
+                  <p>
+                    A welcoming setting to try plein air painting and find
+                    inspiration in the world around us.
+                  </p>
+                  <footer>Sample participant 3</footer>
+                </blockquote>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -372,6 +666,10 @@
                 type="text"
                 placeholder="Emma"
                 autocomplete="name"
+                minlength="5"
+                maxlength="64"
+                pattern="[a-zA-Z\s.]{5,64}"
+                title="Use 5 to 64 Latin letters, spaces or periods"
                 required
               />
               <label for="email">Email*</label>
@@ -381,12 +679,25 @@
                 type="email"
                 placeholder="hello@wildsketch.com"
                 autocomplete="email"
+                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                 required
               />
+              <label for="event">Choose event*</label>
+              <select id="event" name="event" required>
+                <option value="" disabled selected>Choose event</option>
+                <option value="1">Morning Light Sketching</option>
+                <option value="2">Floral Focus: Painting Wildflowers</option>
+                <option value="3">Color &amp; Composition Basics</option>
+                <option value="4">
+                  Drawing Stillness: Meditative Sketching
+                </option>
+                <option value="5">Golden Hour Landscape Study</option>
+              </select>
               <label for="skills">Describe your skills</label>
               <textarea
                 id="skills"
                 name="skills"
+                maxlength="500"
                 placeholder="Type your skills..."
                 rows="5"
               ></textarea>
@@ -400,7 +711,7 @@
             decoding="async"
             src="./images/register-workshop-800.webp"
             srcset="./images/register-workshop-400.webp 400w, ./images/register-workshop-800.webp 800w, ./images/register-workshop-1400.webp 1400w"
-            sizes="(min-width: 1440px) 640px, (min-width: 768px) 600px, calc(100vw - 32px)"
+            sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
             width="2844"
             height="2844"
             alt="Outdoor art class with students painting nature"
@@ -418,6 +729,8 @@
           <a href="#benefits">Benefits</a>
           <a href="#gallery">Gallery</a>
           <a href="#events">Events</a>
+          <a href="#team">Team</a>
+          <a href="#feedbacks">Feedbacks</a>
         </nav>
       </div>
       <div class="footer-credits">

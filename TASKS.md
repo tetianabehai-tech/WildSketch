@@ -1,58 +1,11 @@
-# Tasks for GitHub Projects
+﻿# WildSketch — стан індивідуального проєкту
 
-## Board columns
-- Backlog
-- To Do
-- In Progress
-- Review
-- Done
+Реалізовано секції Design 2: Header, Hero, Benefits, Gallery, Events, Register, Footer. Team і Testimonials відсутні у цій версії наданого макета.
 
-## Section tasks
-1. Project setup and repository configuration
-2. Create base HTML skeleton
-3. Build header and navigation
-4. Build hero section
-5. Build gallery grid
-6. Build event section
-7. Build team section
-8. Build testimonial block
-9. Build contact form
-10. Build footer
-11. Add responsive styles
-12. Check accessibility and UX polish
-13. Final QA and bug fixing
-14. Prepare GitHub Pages deployment
-15. Final presentation and demo
+Mobile First: базова мобільна верстка, межі 768/1440 px. Перевірки Chrome: 375, 600, 768, 1024, 1440, 1920 px; зображення, переповнення, меню, Escape, навігація, збереження полів форми.
 
-## Branch naming
-- feature/header
-- feature/hero
-- feature/gallery
-- feature/event
-- feature/team
-- feature/testimonials
-- feature/contact
-- feature/footer
-- fix/responsive
-- fix/review
+Форма має HTML-валідацію, але сервер не підключено; повідомлення про відправлення не імітується.
 
-## Pull request flow
-- create task
-- create branch from dev
-- commit small logical changes
-- open PR to dev
-- review and merge
-- move task to Done
+Підтвердження pixel-perfect і критеріїв GoIT потребує оригінальних вимірів Figma та Google Sheets із ТЗ.
 
-## Daily stand-up format
-- What did I do yesterday?
-- What am I doing today?
-- What is blocked / where do I need help?
-
-## Acceptance checklist
-- page matches layout structure
-- sections have correct spacing and hierarchy
-- site looks correct on mobile and desktop
-- buttons and links work
-- repository stays clean and reviewable
-- final deploy is ready
+Робота індивідуальна. Публікація у наявний GitHub-репозиторій і GitHub Pages дозволена власницею 2026-10-09.

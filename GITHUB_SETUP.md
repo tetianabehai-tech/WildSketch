@@ -1,22 +1,7 @@
-# GitHub setup instructions
+﻿# GitHub
 
-## 1. Create a repository on GitHub
-Create a new public or private repository on GitHub.
+Репозиторій: https://github.com/tetianabehai-tech/WildSketch
 
-## 2. Connect local repo to GitHub
-Run:
+Сайт: https://tetianabehai-tech.github.io/WildSketch/
 
-```bash
-git remote add origin <your_repository_url>
-git push -u origin main
-```
-
-## 3. Verify repository state
-
-```bash
-git status
-git branch
-```
-
-## 4. Optional: enable GitHub Pages
-If needed, deploy the built project through GitHub Pages from the repository settings.
+GitHub Pages: гілка gh-pages, коренева папка. Збірка й публікація: npm run deploy. Публікуйте лише після перевірок.

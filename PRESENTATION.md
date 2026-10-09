@@ -1,29 +1,11 @@
-# WildSketch Presentation
+﻿# WildSketch — стан індивідуального проєкту
 
-## Project overview
-WildSketch is a responsive landing page for an outdoor art community and creative workshop brand. The goal of the project is to create a warm, inspiring, and visually polished single-page website that attracts people to creative workshops and outdoor drawing experiences.
+Реалізовано секції Design 2: Header, Hero, Benefits, Gallery, Events, Register, Footer. Team і Testimonials відсутні у цій версії наданого макета.
 
-## What I implemented
-- Hero section with strong headline and CTA buttons
-- Benefits block with SVG icons and descriptive content
-- Gallery with flexible image layout
-- Events section with workshop cards and location links
-- Team section with member cards
-- Testimonials with star rating icons
-- Registration form with validation
-- Mobile menu for small screens
-- Footer navigation and brand identity
-- Favicon and polished visual styling
+Mobile First: базова мобільна верстка, межі 768/1440 px. Перевірки Chrome: 375, 600, 768, 1024, 1440, 1920 px; зображення, переповнення, меню, Escape, навігація, збереження полів форми.
 
-## Technologies used
-- HTML5
-- CSS3
-- JavaScript
-- Vite
-- modern-normalize
+Форма має HTML-валідацію, але сервер не підключено; повідомлення про відправлення не імітується.
 
-## Why this project is useful
-The website communicates a creative and calm brand identity while providing a strong, conversion-focused landing page for workshop registration.
+Підтвердження pixel-perfect і критеріїв GoIT потребує оригінальних вимірів Figma та Google Sheets із ТЗ.
 
-## Final result
-The landing page is fully responsive, visually consistent, and ready for review, presentation, and GitHub deployment.
+Робота індивідуальна. Публікація у наявний GitHub-репозиторій і GitHub Pages дозволена власницею 2026-10-09.

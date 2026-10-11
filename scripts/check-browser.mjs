@@ -45,14 +45,21 @@ for (const width of [375, 600, 768, 1024, 1440, 1920]) {
   await page.locator("#name").fill("Test User");
   await page.locator("#email").fill("test@example.com");
   await page.locator(".register-form button").click();
-  if ((await page.locator("#name").inputValue()) !== "Test User")
-    throw Error("Form erased input");
   if (
-    !(await page.locator(".form-status").innerText()).includes("not been sent")
+    !(await page
+      .locator(".backdrop")
+      .evaluate((e) => e.classList.contains("subscription-open")))
   )
-    throw Error("Misleading form status");
+    throw Error("Success modal did not open");
+  await page.locator(".modal .button").click();
+  if (
+    await page
+      .locator(".backdrop")
+      .evaluate((e) => e.classList.contains("subscription-open"))
+  )
+    throw Error("Success modal did not close");
   await page.screenshot({ path: `qa/${width}.png`, fullPage: true });
-  console.log(`PASS ${width}px: images, overflow, menu, form`);
+  console.log(`PASS ${width}px: images, overflow, menu, form, modal`);
 }
 await browser.close();
 if (errors.length) throw Error(errors.join("\n"));

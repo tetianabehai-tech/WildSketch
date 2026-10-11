@@ -53,13 +53,31 @@ if (menuToggle && mobileMenu) {
 }
 
 const registerForm = document.querySelector("#register-form");
+const modal = document.querySelector("[data-subscription-modal]");
+
+const setModalOpen = (open) => {
+  if (!modal) return;
+  modal.classList.toggle("subscription-open", open);
+  document.body.classList.toggle("subscription-is-open", open);
+  if (open) modal.querySelector(".modal .button").focus();
+};
+
 if (registerForm) {
   registerForm.addEventListener("submit", (event) => {
     event.preventDefault();
     if (!registerForm.reportValidity()) return;
-    const status = registerForm.querySelector(".form-status");
-    status.textContent =
-      "Registration is currently unavailable. Your details have not been sent.";
-    status.hidden = false;
+    registerForm.reset();
+    setModalOpen(true);
+  });
+}
+
+if (modal) {
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal || event.target.closest("[data-modal-close]"))
+      setModalOpen(false);
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modal.classList.contains("subscription-open"))
+      setModalOpen(false);
   });
 }

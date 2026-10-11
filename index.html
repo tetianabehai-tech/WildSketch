@@ -743,7 +743,6 @@
                 rows="5"
               ></textarea>
               <button type="submit" class="button">Register</button>
-              <p class="form-status" role="status" hidden></p>
             </form>
           </div>
           <img
@@ -785,6 +784,45 @@
         <p>© 2025 WildDraw. All rights reserved.</p>
       </div>
     </footer>
+
+    <div class="backdrop" data-subscription-modal>
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="subscription-title"
+      >
+        <button
+          class="modal-close-icon"
+          type="button"
+          aria-label="Close modal"
+          data-modal-close
+        >
+          ×
+        </button>
+        <img
+          class="modal-image"
+          src="./images/register-workshop-400.webp"
+          srcset="
+            ./images/register-workshop-400.webp 400w,
+            ./images/register-workshop-800.webp 800w
+          "
+          sizes="280px"
+          width="2844"
+          height="2844"
+          alt="Outdoor art class with students painting nature"
+          loading="lazy"
+          decoding="async"
+        />
+        <h2 id="subscription-title" class="modal-title">
+          Success subscription
+        </h2>
+        <p class="modal-text">
+          Fresh brews, special offers, and cozy updates are coming your way
+        </p>
+        <button class="button" type="button" data-modal-close>Close</button>
+      </div>
+    </div>
 
     <script type="module" src="./src/main.js"></script>
   </body>

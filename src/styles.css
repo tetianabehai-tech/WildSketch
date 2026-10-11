@@ -795,3 +795,9 @@ button {
     height: 348px;
   }
 }
+
+/* Navigation links are marked up as lists; lists inherit the nav layout. */
+.nav-list,
+.nav-list > li {
+  display: contents;
+}

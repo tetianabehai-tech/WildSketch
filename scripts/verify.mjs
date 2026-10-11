@@ -72,23 +72,12 @@ try {
   ]) {
     await page.locator("#name").fill(name);
     await page.locator("#email").fill(email);
-    await page.locator("#event").selectOption("1");
     if (
       (await page
         .locator("#register-form")
         .evaluate((f) => f.checkValidity())) !== valid
     )
       throw Error("Form validation mismatch");
-  }
-  await page.locator("#event").evaluate((e) => {
-    e.value = "";
-  });
-  if (await page.locator("#register-form").evaluate((f) => f.checkValidity()))
-    throw Error("Event is not required");
-  for (let i = 0; i < 5; i++) {
-    await page.locator(".event-register").nth(i).click();
-    if ((await page.locator("#event").inputValue()) !== String(i + 1))
-      throw Error("Incorrect selected event");
   }
   await page.setViewportSize({ width: 375, height: 900 });
   await page.locator(".menu-toggle").click();
@@ -117,7 +106,7 @@ try {
     .locator("#feedbacks")
     .screenshot({ path: "qa/feedbacks-desktop.png" });
   console.log(
-    "PASS production structure, validation, event selection, menu keyboard navigation",
+    "PASS production structure, validation, menu keyboard navigation",
   );
 } finally {
   if (browser) await browser.close();

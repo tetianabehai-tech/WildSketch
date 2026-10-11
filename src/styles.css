@@ -701,18 +701,6 @@ ul {
   }
 }
 
-.register-form select {
-  width: 100%;
-  min-width: 0;
-  padding: 12px;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  color: inherit;
-  background: #ede9e6;
-  font: inherit;
-  cursor: pointer;
-}
-
 a,
 button {
   -webkit-tap-highlight-color: transparent;
@@ -725,8 +713,7 @@ button {
   color: #935020;
 }
 .register-form input:hover,
-.register-form textarea:hover,
-.register-form select:hover {
+.register-form textarea:hover {
   border-color: #b99a83;
 }
 .menu-is-open .menu-toggle span:first-child {

@@ -63,10 +63,3 @@ if (registerForm) {
     status.hidden = false;
   });
 }
-
-const eventSelect = document.querySelector("#event");
-document.querySelectorAll(".event-register").forEach((link) => {
-  link.addEventListener("click", () => {
-    if (eventSelect) eventSelect.value = link.dataset.event;
-  });
-});

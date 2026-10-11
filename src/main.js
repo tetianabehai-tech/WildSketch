@@ -48,7 +48,7 @@ if (menuToggle && mobileMenu) {
     if (!event.target.closest(".site-header")) setMenuOpen(false);
   });
   window
-    .matchMedia("(min-width: 1440px)")
+    .matchMedia("(min-width: 768px)")
     .addEventListener("change", () => setMenuOpen(false));
 }
 

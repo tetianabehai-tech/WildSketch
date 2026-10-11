@@ -8,7 +8,7 @@ page.on("response", (r) => {
   if (r.status() >= 400) errors.push(`${r.status()} ${r.url()}`);
 });
 await fs.mkdir("qa", { recursive: true });
-for (const width of [375, 600, 768, 1024, 1440, 1920]) {
+for (const width of [320, 375, 600, 768, 1024, 1440, 1920]) {
   await page.setViewportSize({ width, height: 900 });
   await page.goto(process.env.QA_URL || "http://127.0.0.1:5173/", {
     waitUntil: "networkidle",
@@ -30,7 +30,7 @@ for (const width of [375, 600, 768, 1024, 1440, 1920]) {
   }));
   if (state.overflow || state.broken.length)
     throw Error(`${width}: ${JSON.stringify(state)}`);
-  if (width < 1440) {
+  if (width < 768) {
     await page.locator(".menu-toggle").click();
     if (await page.locator(".mobile-menu").isHidden())
       throw Error("Menu failed to open");

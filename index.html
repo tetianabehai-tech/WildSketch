@@ -88,7 +88,7 @@
                 ./images/hero-watercolor-1400.webp 1400w,
                 ./images/hero-watercolor-1800.webp 1800w
               "
-              sizes="(min-width: 1440px) 808px, (min-width: 768px) 480px, 320px"
+              sizes="(min-width: 1440px) 857px, (min-width: 768px) 704px, calc(100vw - 40px)"
               width="2000"
               height="2000"
               alt="Watercolor illustration of a cottage among flowers and trees"
@@ -118,7 +118,7 @@
             <ul class="benefits-list">
               <li>
                 <article class="benefit-item">
-                  <svg class="icon" width="32" height="32" aria-hidden="true">
+                  <svg class="icon" width="48" height="48" aria-hidden="true">
                     <use href="./images/sprite.svg#icon-spa"></use>
                   </svg>
                   <div>
@@ -132,7 +132,7 @@
               </li>
               <li>
                 <article class="benefit-item">
-                  <svg class="icon" width="32" height="32" aria-hidden="true">
+                  <svg class="icon" width="48" height="48" aria-hidden="true">
                     <use href="./images/sprite.svg#icon-sun"></use>
                   </svg>
                   <div>
@@ -147,7 +147,7 @@
               </li>
               <li>
                 <article class="benefit-item">
-                  <svg class="icon" width="32" height="32" aria-hidden="true">
+                  <svg class="icon" width="48" height="48" aria-hidden="true">
                     <use href="./images/sprite.svg#icon-leaf"></use>
                   </svg>
                   <div>
@@ -166,124 +166,126 @@
       </section>
 
       <section id="gallery" class="gallery">
-        <div class="section-title gallery-title">
-          <h2>Artistic Showcase</h2>
-          <p>Explore the creativity captured in our workshops.</p>
+        <div class="gallery-inner">
+          <div class="section-title gallery-title">
+            <h2>Artistic Showcase</h2>
+            <p>Explore the creativity captured in our workshops.</p>
+          </div>
+          <ul class="gallery-list">
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-hills-800.webp"
+                srcset="
+                  ./images/gallery-hills-400.webp   400w,
+                  ./images/gallery-hills-800.webp   800w,
+                  ./images/gallery-hills-1400.webp 1400w
+                "
+                sizes="(min-width: 1440px) 416px, (min-width: 768px) 219px, calc((100vw - 56px) / 2)"
+                width="2560"
+                height="2560"
+                alt="Watercolor landscape of rolling hills"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-mountains-800.webp"
+                srcset="
+                  ./images/gallery-mountains-400.webp   400w,
+                  ./images/gallery-mountains-800.webp   800w,
+                  ./images/gallery-mountains-1400.webp 1400w
+                "
+                sizes="(min-width: 1440px) 416px, (min-width: 768px) 219px, calc((100vw - 56px) / 2)"
+                width="1667"
+                height="1667"
+                alt="Watercolor mountain landscape"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-forest-800.webp"
+                srcset="
+                  ./images/gallery-forest-400.webp   400w,
+                  ./images/gallery-forest-800.webp   800w,
+                  ./images/gallery-forest-1400.webp 1400w
+                "
+                sizes="(min-width: 1440px) 416px, (min-width: 768px) 219px, calc(100vw - 40px)"
+                width="4096"
+                height="4096"
+                alt="Watercolor evergreen forest"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-river-800.webp"
+                srcset="
+                  ./images/gallery-river-400.webp   400w,
+                  ./images/gallery-river-800.webp   800w,
+                  ./images/gallery-river-1400.webp 1400w
+                "
+                sizes="(min-width: 1440px) 304px, (min-width: 768px) 158px, calc((100vw - 56px) / 2)"
+                width="2000"
+                height="2000"
+                alt="Watercolor river through green hills"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-flower-800.webp"
+                srcset="
+                  ./images/gallery-flower-400.webp   400w,
+                  ./images/gallery-flower-800.webp   800w,
+                  ./images/gallery-flower-1400.webp 1400w
+                "
+                sizes="(min-width: 1440px) 304px, (min-width: 768px) 158px, calc((100vw - 56px) / 2)"
+                width="4096"
+                height="4096"
+                alt="Watercolor flower study"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-trees-800.webp"
+                srcset="
+                  ./images/gallery-trees-400.webp   400w,
+                  ./images/gallery-trees-800.webp   800w,
+                  ./images/gallery-trees-1400.webp 1400w
+                "
+                sizes="(min-width: 1440px) 304px, (min-width: 768px) 158px, calc((100vw - 56px) / 2)"
+                width="4096"
+                height="4096"
+                alt="Outdoor watercolor sketchbook studies"
+              />
+            </li>
+            <li>
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/gallery-garden-800.webp"
+                srcset="
+                  ./images/gallery-garden-400.webp   400w,
+                  ./images/gallery-garden-800.webp   800w,
+                  ./images/gallery-garden-1400.webp 1400w
+                "
+                sizes="(min-width: 1440px) 304px, (min-width: 768px) 158px, calc((100vw - 56px) / 2)"
+                width="2000"
+                height="2000"
+                alt="Colorful garden and botanical sketches"
+              />
+            </li>
+          </ul>
         </div>
-        <ul class="gallery-list">
-          <li>
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-hills-800.webp"
-              srcset="
-                ./images/gallery-hills-400.webp   400w,
-                ./images/gallery-hills-800.webp   800w,
-                ./images/gallery-hills-1400.webp 1400w
-              "
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
-              width="2560"
-              height="2560"
-              alt="Watercolor landscape of rolling hills"
-            />
-          </li>
-          <li>
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-mountains-800.webp"
-              srcset="
-                ./images/gallery-mountains-400.webp   400w,
-                ./images/gallery-mountains-800.webp   800w,
-                ./images/gallery-mountains-1400.webp 1400w
-              "
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
-              width="1667"
-              height="1667"
-              alt="Watercolor mountain landscape"
-            />
-          </li>
-          <li>
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-forest-800.webp"
-              srcset="
-                ./images/gallery-forest-400.webp   400w,
-                ./images/gallery-forest-800.webp   800w,
-                ./images/gallery-forest-1400.webp 1400w
-              "
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
-              width="4096"
-              height="4096"
-              alt="Watercolor evergreen forest"
-            />
-          </li>
-          <li>
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-river-800.webp"
-              srcset="
-                ./images/gallery-river-400.webp   400w,
-                ./images/gallery-river-800.webp   800w,
-                ./images/gallery-river-1400.webp 1400w
-              "
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
-              width="2000"
-              height="2000"
-              alt="Watercolor river through green hills"
-            />
-          </li>
-          <li>
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-flower-800.webp"
-              srcset="
-                ./images/gallery-flower-400.webp   400w,
-                ./images/gallery-flower-800.webp   800w,
-                ./images/gallery-flower-1400.webp 1400w
-              "
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
-              width="4096"
-              height="4096"
-              alt="Watercolor flower study"
-            />
-          </li>
-          <li>
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-trees-800.webp"
-              srcset="
-                ./images/gallery-trees-400.webp   400w,
-                ./images/gallery-trees-800.webp   800w,
-                ./images/gallery-trees-1400.webp 1400w
-              "
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
-              width="4096"
-              height="4096"
-              alt="Outdoor watercolor sketchbook studies"
-            />
-          </li>
-          <li>
-            <img
-              loading="lazy"
-              decoding="async"
-              src="./images/gallery-garden-800.webp"
-              srcset="
-                ./images/gallery-garden-400.webp   400w,
-                ./images/gallery-garden-800.webp   800w,
-                ./images/gallery-garden-1400.webp 1400w
-              "
-              sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
-              width="2000"
-              height="2000"
-              alt="Colorful garden and botanical sketches"
-            />
-          </li>
-        </ul>
       </section>
 
       <section id="events" class="events">
@@ -308,7 +310,7 @@
                     ./images/event-morning-800.webp   800w,
                     ./images/event-morning-1400.webp 1400w
                   "
-                  sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                  sizes="(min-width: 768px) 144px, calc(100vw - 64px)"
                   width="2731"
                   height="4096"
                   alt="Artist painting outdoors"
@@ -316,7 +318,7 @@
                 <div class="event-details">
                   <h3>Morning Light Sketching</h3>
                   <div class="event-meta">
-                    <svg class="icon" width="32" height="32" aria-hidden="true">
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
                       <use href="./images/sprite.svg#icon-map"></use></svg
                     ><a
                       href="https://www.google.com/maps/search/?api=1&amp;query=Central%20Park%20Meadow"
@@ -344,7 +346,7 @@
                     ./images/event-wildflowers-800.webp   800w,
                     ./images/event-wildflowers-1400.webp 1400w
                   "
-                  sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                  sizes="(min-width: 768px) 144px, calc(100vw - 64px)"
                   width="3960"
                   height="2640"
                   alt="Young artist painting in a park"
@@ -352,7 +354,7 @@
                 <div class="event-details">
                   <h3>Floral Focus: Painting Wildflowers</h3>
                   <div class="event-meta">
-                    <svg class="icon" width="32" height="32" aria-hidden="true">
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
                       <use href="./images/sprite.svg#icon-map"></use></svg
                     ><a
                       href="https://www.google.com/maps/search/?api=1&amp;query=Riverside%20Botanical%20Trail"
@@ -380,7 +382,7 @@
                     ./images/event-color-800.webp   800w,
                     ./images/event-color-1400.webp 1400w
                   "
-                  sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                  sizes="(min-width: 768px) 144px, calc(100vw - 64px)"
                   width="4096"
                   height="2733"
                   alt="Artist holding a palette while painting"
@@ -388,7 +390,7 @@
                 <div class="event-details">
                   <h3>Color &amp; Composition Basics</h3>
                   <div class="event-meta">
-                    <svg class="icon" width="32" height="32" aria-hidden="true">
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
                       <use href="./images/sprite.svg#icon-map"></use></svg
                     ><a
                       href="https://www.google.com/maps/search/?api=1&amp;query=Forest%20Edge%20Retreat"
@@ -416,7 +418,7 @@
                     ./images/event-stillness-800.webp   800w,
                     ./images/event-stillness-1400.webp 1400w
                   "
-                  sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                  sizes="(min-width: 768px) 144px, calc(100vw - 64px)"
                   width="3960"
                   height="2640"
                   alt="Mother and daughter drawing together outdoors"
@@ -424,7 +426,7 @@
                 <div class="event-details">
                   <h3>Drawing Stillness: Meditative Sketching</h3>
                   <div class="event-meta">
-                    <svg class="icon" width="32" height="32" aria-hidden="true">
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
                       <use href="./images/sprite.svg#icon-map"></use></svg
                     ><a
                       href="https://www.google.com/maps/search/?api=1&amp;query=Willow%20Grove%20Field"
@@ -452,7 +454,7 @@
                     ./images/event-golden-hour-800.webp   800w,
                     ./images/event-golden-hour-1400.webp 1400w
                   "
-                  sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+                  sizes="(min-width: 768px) 144px, calc(100vw - 64px)"
                   width="3936"
                   height="2624"
                   alt="Artist painting a landscape at sunset"
@@ -460,7 +462,7 @@
                 <div class="event-details">
                   <h3>Golden Hour Landscape Study</h3>
                   <div class="event-meta">
-                    <svg class="icon" width="32" height="32" aria-hidden="true">
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
                       <use href="./images/sprite.svg#icon-map"></use></svg
                     ><a
                       href="https://www.google.com/maps/search/?api=1&amp;query=Sunset%20Ridge%20Hilltop"
@@ -497,7 +499,7 @@
                     ./images/gallery-flower-800.webp   800w,
                     ./images/gallery-flower-1400.webp 1400w
                   "
-                  sizes="(min-width: 1440px) 416px, (min-width: 768px) 336px, calc(100vw - 32px)"
+                  sizes="152px"
                   width="400"
                   height="400"
                   loading="lazy"
@@ -521,7 +523,7 @@
                     ./images/gallery-trees-800.webp   800w,
                     ./images/gallery-trees-1400.webp 1400w
                   "
-                  sizes="(min-width: 1440px) 416px, (min-width: 768px) 336px, calc(100vw - 32px)"
+                  sizes="152px"
                   width="400"
                   height="400"
                   loading="lazy"
@@ -545,7 +547,7 @@
                     ./images/gallery-garden-800.webp   800w,
                     ./images/gallery-garden-1400.webp 1400w
                   "
-                  sizes="(min-width: 1440px) 416px, (min-width: 768px) 336px, calc(100vw - 32px)"
+                  sizes="152px"
                   width="400"
                   height="400"
                   loading="lazy"
@@ -711,37 +713,43 @@
           <div class="contact-content">
             <h2>Register</h2>
             <form id="register-form" class="register-form">
-              <label for="name">Name*</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Emma"
-                autocomplete="name"
-                minlength="5"
-                maxlength="64"
-                pattern="[a-zA-Z\s.]{5,64}"
-                title="Use 5 to 64 Latin letters, spaces or periods"
-                required
-              />
-              <label for="email">Email*</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="hello@wildsketch.com"
-                autocomplete="email"
-                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-                required
-              />
-              <label for="skills">Describe your skills</label>
-              <textarea
-                id="skills"
-                name="skills"
-                maxlength="500"
-                placeholder="Type your skills..."
-                rows="5"
-              ></textarea>
+              <div class="form-field">
+                <label for="name">Name*</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Emma"
+                  autocomplete="name"
+                  minlength="5"
+                  maxlength="64"
+                  pattern="[a-zA-Z\s.]{5,64}"
+                  title="Use 5 to 64 Latin letters, spaces or periods"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="email">Email*</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="hello@wildsketch.com"
+                  autocomplete="email"
+                  pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="skills">Describe your skills</label>
+                <textarea
+                  id="skills"
+                  name="skills"
+                  maxlength="500"
+                  placeholder="Type your skills..."
+                  rows="5"
+                ></textarea>
+              </div>
               <button type="submit" class="button">Register</button>
             </form>
           </div>
@@ -755,7 +763,7 @@
               ./images/register-workshop-800.webp   800w,
               ./images/register-workshop-1400.webp 1400w
             "
-            sizes="(min-width: 1440px) 640px, (min-width: 768px) 480px, calc(100vw - 32px)"
+            sizes="(min-width: 1440px) 640px, (min-width: 768px) 704px, calc(100vw - 40px)"
             width="2844"
             height="2844"
             alt="Outdoor art class with students painting nature"
@@ -765,7 +773,7 @@
     </main>
 
     <footer class="site-footer">
-      <div class="footer-content">
+      <div class="footer-inner">
         <a href="#home" class="footer-logo" aria-label="WildSketch home">
           <img src="./images/logo-footer.svg" alt="WildSketch" />
         </a>
@@ -778,10 +786,9 @@
             <li><a href="#feedbacks">Feedbacks</a></li>
           </ul>
         </nav>
-      </div>
-      <div class="footer-credits">
-        <img src="./images/divider.svg" alt="" />
-        <p>© 2025 WildDraw. All rights reserved.</p>
+        <div class="footer-credits">
+          <p>© 2025 WildDraw. All rights reserved.</p>
+        </div>
       </div>
     </footer>
 

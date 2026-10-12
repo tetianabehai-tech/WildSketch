@@ -1,59 +1,49 @@
-import "./styles.css";
+import "modern-normalize/modern-normalize.css";
+import "./css/styles.css";
 
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
-
-if (menuToggle && mobileMenu) {
-  const setMenuOpen = (open) => {
-    const wasOpen = mobileMenu.classList.contains("is-open");
+const menuClose = document.querySelector(".menu-close");
+if (menuToggle && mobileMenu && menuClose) {
+  const background = [".site-header", "main", ".site-footer"].map((selector) =>
+    document.querySelector(selector),
+  );
+  const setMenuOpen = (open, restoreFocus = false) => {
     mobileMenu.classList.toggle("is-open", open);
     document.body.classList.toggle("menu-is-open", open);
-    if (open || wasOpen) {
-      document.querySelector("main").inert = open;
-      document.querySelector(".site-footer").inert = open;
-    }
+    background.forEach((element) => {
+      element.inert = open;
+    });
     menuToggle.setAttribute("aria-expanded", String(open));
-    menuToggle.setAttribute(
-      "aria-label",
-      open ? "Close navigation" : "Open navigation",
-    );
+    if (open) menuClose.focus();
+    else if (restoreFocus) menuToggle.focus();
   };
-  setMenuOpen(false);
-  menuToggle.addEventListener("click", () =>
-    setMenuOpen(!mobileMenu.classList.contains("is-open")),
-  );
+  menuToggle.addEventListener("click", () => setMenuOpen(true));
+  menuClose.addEventListener("click", () => setMenuOpen(false, true));
   mobileMenu.addEventListener("click", (event) => {
-    if (event.target.closest("a")) setMenuOpen(false);
+    if (event.target.closest("a")) setMenuOpen(false, true);
   });
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Tab" && mobileMenu.classList.contains("is-open")) {
-      const controls = [
-        ...document.querySelectorAll(
-          ".header-inner a, .menu-toggle, .mobile-menu a",
-        ),
-      ].filter((element) => element.getClientRects().length);
-      const first = controls[0];
-      const last = controls.at(-1);
+    if (!mobileMenu.classList.contains("is-open")) return;
+    if (event.key === "Escape") setMenuOpen(false, true);
+    if (event.key === "Tab") {
+      const controls = [...mobileMenu.querySelectorAll("a, button")];
+      const first = controls[0],
+        last = controls.at(-1);
       if (event.shiftKey && document.activeElement === first) {
         event.preventDefault();
         last.focus();
-      }
-      if (!event.shiftKey && document.activeElement === last) {
+      } else if (!event.shiftKey && document.activeElement === last) {
         event.preventDefault();
         first.focus();
       }
     }
-    if (event.key === "Escape" && mobileMenu.classList.contains("is-open")) {
-      setMenuOpen(false);
-      menuToggle.focus();
-    }
-  });
-  document.addEventListener("click", (event) => {
-    if (!event.target.closest(".site-header")) setMenuOpen(false);
   });
   window
     .matchMedia("(min-width: 768px)")
-    .addEventListener("change", () => setMenuOpen(false));
+    .addEventListener("change", (event) => {
+      if (event.matches) setMenuOpen(false);
+    });
 }
 
 const registerForm = document.querySelector("#register-form");

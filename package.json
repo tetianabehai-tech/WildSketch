@@ -10,17 +10,22 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "format": "prettier --write index.html src scripts package.json *.md vite.config.js",
-    "format:check": "prettier --check index.html src scripts package.json *.md vite.config.js",
-    "validate": "html-validate index.html",
+    "format": "prettier --write src scripts package.json *.md vite.config.js",
+    "format:check": "prettier --check src scripts package.json *.md vite.config.js",
+    "validate": "node scripts/validate.mjs",
     "test": "node scripts/verify.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.0",
+    "css-tree": "^3.2.1",
     "gh-pages": "6.1.1",
     "html-validate": "^11.16.2",
+    "modern-normalize": "^3.0.1",
+    "postcss-sort-media-queries": "^6.7.1",
     "prettier": "^3.9.9",
     "sharp": "^0.35.5",
-    "vite": "^8.3.4"
+    "vite": "^8.3.4",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
   }
 }

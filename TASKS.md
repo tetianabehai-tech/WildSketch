@@ -1,10 +1,8 @@
-# Completed implementation
+﻿# Completed implementation
 
-- Responsive required sections and navigation.
-- Semantic lists and SVG sprite.
-- Required name, email and event validation; skills limited to 500 characters.
-- Full-height mobile menu with Escape and keyboard focus handling.
-- Responsive optimized images and production build.
-- Automated production browser verification.
+- GoIT template structure, all required sections and responsive assets.
+- Exact Figma brand assets, six Team cards and six testimonials.
+- Responsive navigation, mobile menu and registration validation without an event selector.
+- Local HTML/CSS/resource validation and production/dev browser checks.
 
-Source limitations and deployment status: REQUIREMENTS_STATUS.md.
+See REQUIREMENTS_STATUS.md for evidence and the external CSS-validator limitation.

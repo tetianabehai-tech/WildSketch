@@ -1,3 +1,4 @@
+import { checkRequirements } from "./check-requirements.mjs";
 import { spawn } from "node:child_process";
 import { chromium } from "@playwright/test";
 const port = 4183;
@@ -93,7 +94,7 @@ try {
   await page.keyboard.press("Tab");
   if (
     !(await page
-      .locator(".header-logo")
+      .locator(".mobile-menu .header-logo")
       .evaluate((e) => e === document.activeElement))
   )
     throw Error("Menu focus escaped");
@@ -108,6 +109,7 @@ try {
   console.log(
     "PASS production structure, validation, menu keyboard navigation",
   );
+  await checkRequirements(browser, url);
 } finally {
   if (browser) await browser.close();
   server.kill();

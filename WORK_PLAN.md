@@ -1,3 +1,3 @@
-# Implementation status
+﻿# Implementation status
 
-All requested sections are implemented. See REQUIREMENTS_STATUS.md for checks and source limitations. Team and Feedbacks use labelled demonstration content. The registration form is a frontend MVP without a backend.
+The GoIT structure and requested sections are implemented and checked against the correct Figma Design page through MCP. Registration is a frontend MVP, as required by the assignment. See REQUIREMENTS_STATUS.md for verification and source notes.

@@ -1,15 +1,17 @@
-﻿import "./styles.css";
+import "./styles.css";
 
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
 
 if (menuToggle && mobileMenu) {
   const setMenuOpen = (open) => {
-    mobileMenu.hidden = !open;
+    const wasOpen = mobileMenu.classList.contains("is-open");
     mobileMenu.classList.toggle("is-open", open);
     document.body.classList.toggle("menu-is-open", open);
-    document.querySelector("main").inert = open;
-    document.querySelector(".site-footer").inert = open;
+    if (open || wasOpen) {
+      document.querySelector("main").inert = open;
+      document.querySelector(".site-footer").inert = open;
+    }
     menuToggle.setAttribute("aria-expanded", String(open));
     menuToggle.setAttribute(
       "aria-label",
@@ -17,12 +19,14 @@ if (menuToggle && mobileMenu) {
     );
   };
   setMenuOpen(false);
-  menuToggle.addEventListener("click", () => setMenuOpen(mobileMenu.hidden));
+  menuToggle.addEventListener("click", () =>
+    setMenuOpen(!mobileMenu.classList.contains("is-open")),
+  );
   mobileMenu.addEventListener("click", (event) => {
     if (event.target.closest("a")) setMenuOpen(false);
   });
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Tab" && !mobileMenu.hidden) {
+    if (event.key === "Tab" && mobileMenu.classList.contains("is-open")) {
       const controls = [
         ...document.querySelectorAll(
           ".header-inner a, .menu-toggle, .mobile-menu a",
@@ -39,7 +43,7 @@ if (menuToggle && mobileMenu) {
         first.focus();
       }
     }
-    if (event.key === "Escape" && !mobileMenu.hidden) {
+    if (event.key === "Escape" && mobileMenu.classList.contains("is-open")) {
       setMenuOpen(false);
       menuToggle.focus();
     }
@@ -55,18 +59,33 @@ if (menuToggle && mobileMenu) {
 const registerForm = document.querySelector("#register-form");
 const modal = document.querySelector("[data-subscription-modal]");
 
+let modalTrigger;
+const modalBackground = [...document.body.children].filter(
+  (element) => element !== modal && element.tagName !== "SCRIPT",
+);
+const backgroundState = new Map();
 const setModalOpen = (open) => {
   if (!modal) return;
+  if (open) {
+    modalTrigger = document.activeElement;
+    for (const element of modalBackground) {
+      backgroundState.set(element, element.inert);
+      element.inert = true;
+    }
+  } else {
+    for (const [element, inert] of backgroundState) element.inert = inert;
+    backgroundState.clear();
+  }
   modal.classList.toggle("subscription-open", open);
   document.body.classList.toggle("subscription-is-open", open);
   if (open) modal.querySelector(".modal .button").focus();
+  else modalTrigger?.focus();
 };
 
 if (registerForm) {
   registerForm.addEventListener("submit", (event) => {
     event.preventDefault();
     if (!registerForm.reportValidity()) return;
-    registerForm.reset();
     setModalOpen(true);
   });
 }
@@ -77,7 +96,20 @@ if (modal) {
       setModalOpen(false);
   });
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && modal.classList.contains("subscription-open"))
-      setModalOpen(false);
+    if (!modal.classList.contains("subscription-open")) return;
+    if (event.key === "Escape") setModalOpen(false);
+    if (event.key === "Tab") {
+      const controls = [...modal.querySelectorAll("button")];
+      const first = controls[0],
+        last = controls.at(-1);
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      }
+      if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
   });
 }

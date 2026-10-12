@@ -58,9 +58,9 @@ try {
     structure.headings !== 1 ||
     !structure.sections ||
     structure.brokenAnchors ||
-    structure.team !== 3 ||
-    structure.reviews !== 3 ||
-    structure.stars !== 15 ||
+    structure.team !== 6 ||
+    structure.reviews !== 6 ||
+    structure.stars !== 30 ||
     structure.skillsLimit !== 500
   )
     throw Error(JSON.stringify(structure));

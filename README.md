@@ -23,15 +23,15 @@ npm test
 npm run preview
 ```
 
-Browser checks require installed Google Chrome. The test command starts its own preview server and checks the production build at six viewport widths, image loading, overflow, menu, form patterns, event selection and section structure. Screenshots are saved in qa/.
+Browser checks require installed Google Chrome. The test command starts its own preview server and checks the production build at nine viewport widths, image loading, overflow, menu, form patterns and section structure. Screenshots are saved in qa/.
 
 ## Included
 
 Header, Hero, Benefits, Gallery, Events, Team, Feedbacks, Register, Footer and full-height mobile navigation. Layout uses Mobile First styles with tablet and desktop breakpoints at 768px and 1440px. Images use WebP variants and responsive source sets. Icons use an SVG sprite.
 
-Team cards and testimonials contain visibly labelled demonstration content because source photos, names and reviews were not included in the provided Design 2 exports. Registration validates input and selects the workshop from event links. It has no server integration and explicitly reports that details have not been sent; no successful registration is simulated.
+Team portraits, names, roles and the six testimonials come from the correct Figma Design page (file n9IyoxHkRQEIRHwdqlDPOf, desktop node 8202:63498). Registration includes name, email and skills only, as requested by the mentor. It validates locally and opens a preview explaining that no details were sent and no booking was made.
 
-The desktop export and written requirements guided implementation. Exact tablet/mobile and UI Kit matching is not certified. Map links search the supplied venue names; precise locations were not provided.
+Layout measurements were retrieved directly from the Figma API for desktop, tablet and mobile. See FIGMA_MEASUREMENTS.md for frame IDs and measured sizes. Some Figma Team frames have inconsistent heights; text is allowed to fit naturally. Map links search the supplied venue names; precise locations were not provided.
 
 ## Publishing
 

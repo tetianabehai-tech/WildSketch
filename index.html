@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="header-inner">
+      <div class="header-inner container">
         <a href="#home" class="header-logo" aria-label="WildSketch home">
           <img src="./images/logo.svg" alt="WildSketch" />
         </a>
@@ -52,7 +52,6 @@
         id="mobile-navigation"
         class="mobile-menu"
         aria-label="Mobile navigation"
-        hidden
       >
         <ul class="nav-list">
           <li><a href="#benefits">Benefits</a></li>
@@ -66,7 +65,7 @@
 
     <main id="home">
       <section class="hero">
-        <div class="hero-inner">
+        <div class="hero-inner container">
           <div class="hero-copy">
             <h1>Unleash Your Creativity in Nature's Embrace</h1>
             <p>
@@ -98,7 +97,7 @@
       </section>
 
       <section id="benefits" class="benefits">
-        <div class="benefits-inner">
+        <div class="benefits-inner container">
           <div class="benefits-art">
             <img
               src="./images/benefits-illustration-800.webp"
@@ -166,7 +165,7 @@
       </section>
 
       <section id="gallery" class="gallery">
-        <div class="gallery-inner">
+        <div class="gallery-inner container">
           <div class="section-title gallery-title">
             <h2>Artistic Showcase</h2>
             <p>Explore the creativity captured in our workshops.</p>
@@ -289,7 +288,7 @@
       </section>
 
       <section id="events" class="events">
-        <div class="events-inner">
+        <div class="events-inner container">
           <div class="section-title events-title">
             <h2>Explore Our Upcoming Workshop Schedule</h2>
             <p>
@@ -483,33 +482,30 @@
       </section>
 
       <section id="team" class="team" aria-labelledby="team-title">
-        <div class="community-inner">
+        <div class="community-inner container">
           <div class="section-title gallery-title">
             <h2 id="team-title">Our team</h2>
-            <p>Meet the artists behind our outdoor workshops.</p>
+            <p>Meet the passionate artists guiding your plein air journey.</p>
           </div>
           <ul class="team-list">
             <li class="team-card">
               <article>
                 <img
                   class="team-photo"
-                  src="./images/gallery-flower-400.webp"
+                  src="./images/team-emma-caldwell.webp"
                   srcset="
-                    ./images/gallery-flower-400.webp   400w,
-                    ./images/gallery-flower-800.webp   800w,
-                    ./images/gallery-flower-1400.webp 1400w
+                    ./images/team-emma-caldwell.webp    1x,
+                    ./images/team-emma-caldwell@2x.webp 2x
                   "
-                  sizes="152px"
-                  width="400"
-                  height="400"
+                  width="152"
+                  height="152"
                   loading="lazy"
                   decoding="async"
-                  alt="Temporary watercolor illustration for artist 1"
+                  alt="Emma Caldwell"
                 />
                 <div class="team-details">
-                  <p class="sample-label">Photo and details to be provided</p>
-                  <h3>Artist 1</h3>
-                  <p>Name and role coming soon.</p>
+                  <h3>Emma Caldwell</h3>
+                  <p>Lead Art Instructor</p>
                 </div>
               </article>
             </li>
@@ -517,23 +513,20 @@
               <article>
                 <img
                   class="team-photo"
-                  src="./images/gallery-trees-400.webp"
+                  src="./images/team-lina-morales.webp"
                   srcset="
-                    ./images/gallery-trees-400.webp   400w,
-                    ./images/gallery-trees-800.webp   800w,
-                    ./images/gallery-trees-1400.webp 1400w
+                    ./images/team-lina-morales.webp    1x,
+                    ./images/team-lina-morales@2x.webp 2x
                   "
-                  sizes="152px"
-                  width="400"
-                  height="400"
+                  width="152"
+                  height="152"
                   loading="lazy"
                   decoding="async"
-                  alt="Temporary watercolor illustration for artist 2"
+                  alt="Lina Morales"
                 />
                 <div class="team-details">
-                  <p class="sample-label">Photo and details to be provided</p>
-                  <h3>Artist 2</h3>
-                  <p>Name and role coming soon.</p>
+                  <h3>Lina Morales</h3>
+                  <p>Creative Workshop Coordinator</p>
                 </div>
               </article>
             </li>
@@ -541,23 +534,83 @@
               <article>
                 <img
                   class="team-photo"
-                  src="./images/gallery-garden-400.webp"
+                  src="./images/team-owen-fischer.webp"
                   srcset="
-                    ./images/gallery-garden-400.webp   400w,
-                    ./images/gallery-garden-800.webp   800w,
-                    ./images/gallery-garden-1400.webp 1400w
+                    ./images/team-owen-fischer.webp    1x,
+                    ./images/team-owen-fischer@2x.webp 2x
                   "
-                  sizes="152px"
-                  width="400"
-                  height="400"
+                  width="152"
+                  height="152"
                   loading="lazy"
                   decoding="async"
-                  alt="Temporary watercolor illustration for artist 3"
+                  alt="Owen Fischer"
                 />
                 <div class="team-details">
-                  <p class="sample-label">Photo and details to be provided</p>
-                  <h3>Artist 3</h3>
-                  <p>Name and role coming soon.</p>
+                  <h3>Owen Fischer</h3>
+                  <p>Materials &amp; Techniques Expert</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-card">
+              <article>
+                <img
+                  class="team-photo"
+                  src="./images/team-naomi-lee.webp"
+                  srcset="
+                    ./images/team-naomi-lee.webp    1x,
+                    ./images/team-naomi-lee@2x.webp 2x
+                  "
+                  width="152"
+                  height="152"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Naomi Lee"
+                />
+                <div class="team-details">
+                  <h3>Naomi Lee</h3>
+                  <p>Mindfulness &amp; Sketching Coach</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-card">
+              <article>
+                <img
+                  class="team-photo"
+                  src="./images/team-jack-turner.webp"
+                  srcset="
+                    ./images/team-jack-turner.webp    1x,
+                    ./images/team-jack-turner@2x.webp 2x
+                  "
+                  width="152"
+                  height="152"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Jack Turner"
+                />
+                <div class="team-details">
+                  <h3>Jack Turner</h3>
+                  <p>Photographer &amp; Visual Archivist</p>
+                </div>
+              </article>
+            </li>
+            <li class="team-card">
+              <article>
+                <img
+                  class="team-photo"
+                  src="./images/team-ben-novak.webp"
+                  srcset="
+                    ./images/team-ben-novak.webp    1x,
+                    ./images/team-ben-novak@2x.webp 2x
+                  "
+                  width="152"
+                  height="152"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Ben Novak"
+                />
+                <div class="team-details">
+                  <h3>Ben Novak</h3>
+                  <p>Outdoor Logistics Manager</p>
                 </div>
               </article>
             </li>
@@ -569,22 +622,14 @@
         class="feedbacks"
         aria-labelledby="feedbacks-title"
       >
-        <div class="community-inner">
+        <div class="community-inner container">
           <div class="section-title gallery-title">
             <h2 id="feedbacks-title">Customer testimonials</h2>
-            <p>
-              Preview with sample reviews. Participant feedback will be added
-              here.
-            </p>
           </div>
           <ul class="feedback-list">
             <li class="feedback-card">
-              <article>
-                <p class="sample-label">Sample review</p>
-                <ul
-                  class="rating"
-                  aria-label="Example rating: 5 out of 5 stars"
-                >
+              <div class="feedback-content">
+                <ul class="rating" aria-label="5 out of 5 stars">
                   <li>
                     <svg class="icon" width="24" height="24" aria-hidden="true">
                       <use href="./images/sprite.svg#icon-star"></use>
@@ -613,20 +658,17 @@
                 </ul>
                 <blockquote>
                   <p>
-                    A peaceful way to slow down, notice the landscape, and make
-                    time for drawing outdoors.
+                    “An unforgettable way to reconnect with nature and
+                    creativity. I came home with a full sketchbook and a
+                    peaceful mind.”
                   </p>
-                  <footer>Sample participant 1</footer>
+                  <footer>Julia Nguyen</footer>
                 </blockquote>
-              </article>
+              </div>
             </li>
             <li class="feedback-card">
-              <article>
-                <p class="sample-label">Sample review</p>
-                <ul
-                  class="rating"
-                  aria-label="Example rating: 5 out of 5 stars"
-                >
+              <div class="feedback-content">
+                <ul class="rating" aria-label="4 out of 5 stars">
                   <li>
                     <svg class="icon" width="24" height="24" aria-hidden="true">
                       <use href="./images/sprite.svg#icon-star"></use>
@@ -647,7 +689,7 @@
                       <use href="./images/sprite.svg#icon-star"></use>
                     </svg>
                   </li>
-                  <li>
+                  <li class="rating-empty">
                     <svg class="icon" width="24" height="24" aria-hidden="true">
                       <use href="./images/sprite.svg#icon-star"></use>
                     </svg>
@@ -655,20 +697,16 @@
                 </ul>
                 <blockquote>
                   <p>
-                    The workshop helped me explore colour and enjoy the process
-                    of creating in nature.
+                    “WildSketch helped me rediscover my love for drawing. The
+                    instructors were kind, encouraging, and deeply inspiring.”
                   </p>
-                  <footer>Sample participant 2</footer>
+                  <footer>Mark Leblanc</footer>
                 </blockquote>
-              </article>
+              </div>
             </li>
             <li class="feedback-card">
-              <article>
-                <p class="sample-label">Sample review</p>
-                <ul
-                  class="rating"
-                  aria-label="Example rating: 5 out of 5 stars"
-                >
+              <div class="feedback-content">
+                <ul class="rating" aria-label="5 out of 5 stars">
                   <li>
                     <svg class="icon" width="24" height="24" aria-hidden="true">
                       <use href="./images/sprite.svg#icon-star"></use>
@@ -697,19 +735,134 @@
                 </ul>
                 <blockquote>
                   <p>
-                    A welcoming setting to try plein air painting and find
-                    inspiration in the world around us.
+                    “Beautiful locations, great energy, and a supportive
+                    community. I’m not a professional artist, but I felt totally
+                    welcomed.”
                   </p>
-                  <footer>Sample participant 3</footer>
+                  <footer>Sofia Mendes</footer>
                 </blockquote>
-              </article>
+              </div>
+            </li>
+            <li class="feedback-card">
+              <div class="feedback-content">
+                <ul class="rating" aria-label="4 out of 5 stars">
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="rating-empty">
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <blockquote>
+                  <p>
+                    “Sketching outdoors in the golden hour was magical. Highly
+                    recommend for anyone looking to slow down and create.”
+                  </p>
+                  <footer>Daniel Ortiz</footer>
+                </blockquote>
+              </div>
+            </li>
+            <li class="feedback-card">
+              <div class="feedback-content">
+                <ul class="rating" aria-label="5 out of 5 stars">
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <blockquote>
+                  <p>
+                    “The team made everything feel effortless and joyful. I
+                    learned so much and met wonderful people along the way.”
+                  </p>
+                  <footer>Anika Shah</footer>
+                </blockquote>
+              </div>
+            </li>
+            <li class="feedback-card">
+              <div class="feedback-content">
+                <ul class="rating" aria-label="4 out of 5 stars">
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                  <li class="rating-empty">
+                    <svg class="icon" width="24" height="24" aria-hidden="true">
+                      <use href="./images/sprite.svg#icon-star"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <blockquote>
+                  <p>
+                    “Such a wholesome and uplifting experience. WildSketch is
+                    now my go-to escape when I need a creative reset.”
+                  </p>
+                  <footer>Thomas Becker</footer>
+                </blockquote>
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
       <section id="register" class="contact">
-        <div class="contact-inner">
+        <div class="contact-inner container">
           <div class="contact-content">
             <h2>Register</h2>
             <form id="register-form" class="register-form">
@@ -773,7 +926,7 @@
     </main>
 
     <footer class="site-footer">
-      <div class="footer-inner">
+      <div class="footer-inner container">
         <a href="#home" class="footer-logo" aria-label="WildSketch home">
           <img src="./images/logo-footer.svg" alt="WildSketch" />
         </a>
@@ -787,7 +940,7 @@
           </ul>
         </nav>
         <div class="footer-credits">
-          <p>© 2025 WildDraw. All rights reserved.</p>
+          <p>&copy; 2025 WildDraw. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -805,7 +958,7 @@
           aria-label="Close modal"
           data-modal-close
         >
-          ×
+          <span aria-hidden="true">&times;</span>
         </button>
         <img
           class="modal-image"
@@ -822,10 +975,11 @@
           decoding="async"
         />
         <h2 id="subscription-title" class="modal-title">
-          Success subscription
+          Registration preview
         </h2>
         <p class="modal-text">
-          Fresh brews, special offers, and cozy updates are coming your way
+          This form is a demonstration. Your details have not been sent and no
+          booking has been made.
         </p>
         <button class="button" type="button" data-modal-close>Close</button>
       </div>

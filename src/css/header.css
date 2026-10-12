@@ -1,0 +1,129 @@
+/* ===== Header / navbar: 64 (mobile) / 72 px tall ===== */
+.site-header {
+  position: relative;
+  z-index: 21;
+  background: var(--color-bg);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  padding-right: 12px;
+}
+.header-logo img {
+  width: 117px;
+  height: 50px;
+}
+.site-nav {
+  display: none;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.menu-toggle:hover {
+  color: var(--color-hover);
+}
+.menu-is-open {
+  overflow: hidden;
+}
+
+/* Mobile menu: full width, full viewport height, hidden until .is-open. */
+.mobile-menu {
+  display: none;
+}
+.mobile-menu.is-open {
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  display: block;
+  width: 100%;
+  height: 100dvh;
+  padding-top: 0;
+  overflow-y: auto;
+  background: var(--color-bg);
+}
+.mobile-menu .nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 375px;
+  margin-inline: auto;
+  padding: 16px 20px 32px;
+}
+.mobile-menu .nav-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+}
+@media (min-width: 768px) {
+  .header-inner {
+    min-height: 72px;
+    padding-right: var(--container-padding);
+  }
+  .header-logo img {
+    width: 117px;
+    height: 50px;
+  }
+  .site-nav {
+    display: block;
+    margin-left: auto;
+  }
+  .site-nav .nav-list {
+    display: flex;
+    gap: 32px;
+  }
+  .header-actions {
+    margin-left: 32px;
+  }
+  .menu-toggle,
+  .mobile-menu,
+  .mobile-menu.is-open {
+    display: none;
+  }
+}
+
+.mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  padding-right: 12px;
+}
+.menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.menu-close:hover {
+  color: var(--color-hover);
+}
+.header-logo:hover,
+.footer-logo:hover {
+  opacity: 0.7;
+}
+
+.mobile-menu .nav-list {
+  font-size: 18px;
+}

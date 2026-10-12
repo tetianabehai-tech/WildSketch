@@ -1,0 +1,55 @@
+/* ===== Hero ===== */
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-block: 64px;
+}
+.hero-copy p {
+  margin-top: 24px;
+  font-size: 18px;
+}
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+.hero-art img {
+  width: 100%;
+  aspect-ratio: 857 / 659;
+  object-fit: cover;
+  border-radius: var(--radius-medium);
+}
+@media (min-width: 768px) {
+  .hero-copy h1 {
+    max-width: 601px;
+  }
+  .hero-actions {
+    flex-direction: row;
+    gap: 24px;
+    max-width: 342px;
+  }
+  .hero-actions .button {
+    flex: 1;
+  }
+}
+@media (min-width: 1440px) {
+  .hero-inner {
+    flex-direction: row;
+    align-items: center;
+  }
+  .hero-copy {
+    flex: 0 0 423px;
+  }
+  .hero-actions {
+    max-width: none;
+    gap: 16px;
+  }
+  .hero-actions .button {
+    flex: none;
+  }
+  .hero-art {
+    flex: 0 0 857px;
+  }
+}

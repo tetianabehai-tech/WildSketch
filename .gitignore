@@ -20,3 +20,9 @@ prompt.md
 figma-prompt.md
 FIGMA_MEASUREMENTS.md
 links.md
+
+# Temporary design exports and audit artifacts
+figma-*.mjs
+figma-mcp-*.txt
+figma-mcp-*.json
+section-dimensions.json

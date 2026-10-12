@@ -1,0 +1,63 @@
+<section id="register" class="contact">
+  <div class="contact-inner container">
+    <div class="contact-content">
+      <h2>Register</h2>
+      <form id="register-form" class="register-form">
+        <div class="form-field">
+          <label for="name">Name*</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Emma"
+            autocomplete="name"
+            minlength="5"
+            maxlength="64"
+            pattern="[a-zA-Z\s.]{5,64}"
+            title="Use 5 to 64 Latin letters, spaces or periods"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label for="email">Email*</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="hello@wildsketch.com"
+            autocomplete="email"
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            required
+          />
+        </div>
+        <div class="form-field">
+          <label for="skills">Describe your skills</label>
+          <textarea
+            id="skills"
+            name="skills"
+            maxlength="500"
+            placeholder="Type your skills..."
+            rows="5"
+          ></textarea>
+        </div>
+        <button type="submit" class="button">Register</button>
+      </form>
+    </div>
+    <img
+      class="contact-image"
+      loading="lazy"
+      decoding="async"
+      src="./img/register-workshop-800.webp"
+      srcset="
+        ./img/register-workshop-400.webp   400w,
+        ./img/register-workshop-800.webp   800w,
+        ./img/register-workshop-1400.webp 1400w,
+        ./img/register-workshop-1600.webp 1600w
+      "
+      sizes="(min-width: 1440px) 734px, (min-width: 768px) 704px, calc(100vw - 40px)"
+      width="2844"
+      height="2844"
+      alt="Outdoor art class with students painting nature"
+    />
+  </div>
+</section>

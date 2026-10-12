@@ -1,0 +1,70 @@
+/* ===== Benefits (Layout) ===== */
+.benefits-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-block: 40px;
+}
+.benefits-content h2 {
+  max-width: 450px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+  padding-block: 8px;
+}
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.benefit-item .icon {
+  width: 48px;
+  height: 48px;
+}
+.benefit-item p {
+  margin-top: 16px;
+}
+.benefits-art {
+  order: 1;
+}
+.benefits-art img {
+  width: 100%;
+  aspect-ratio: 335 / 317;
+  object-fit: contain;
+}
+@media (min-width: 768px) {
+  .benefits-art {
+    align-self: center;
+    width: 522px;
+  }
+  .benefit-item > div {
+    max-width: 540px;
+  }
+}
+@media (min-width: 1440px) {
+  .benefits-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    padding-block: 112px;
+  }
+  .benefits-art {
+    order: 0;
+    flex: 1 1 0;
+    width: auto;
+  }
+  .benefits-art img {
+    aspect-ratio: 616 / 586;
+  }
+  .benefits-content {
+    flex: 1 1 0;
+  }
+  .benefit-item > div {
+    max-width: 544px;
+  }
+}

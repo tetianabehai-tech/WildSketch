@@ -9,7 +9,9 @@ page.on("response", (r) => {
 });
 await fs.mkdir("qa", { recursive: true });
 try {
-  for (const width of [320, 375, 600, 767, 768, 1024, 1439, 1440, 1920]) {
+  for (const width of process.env.QA_WIDTHS
+    ? process.env.QA_WIDTHS.split(",").map(Number)
+    : [320, 375, 600, 767, 768, 1024, 1439, 1440, 1920]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto(process.env.QA_URL || "http://127.0.0.1:5173/", {
       waitUntil: "networkidle",
@@ -45,9 +47,9 @@ try {
         ).length;
       };
       return {
-        containers: [...document.querySelectorAll(".container")].map(
-          (element) => element.getBoundingClientRect().width,
-        ),
+        containers: [...document.querySelectorAll(".container")]
+          .filter((element) => element.getClientRects().length)
+          .map((element) => element.getBoundingClientRect().width),
         header: box(".header-inner").height,
         logo: box(".header-logo img").width,
         teamColumns: columns(".team-card"),
